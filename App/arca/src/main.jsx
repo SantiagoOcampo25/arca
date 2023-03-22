@@ -5,6 +5,7 @@ import Banner from '../components/bannerIndex.jsx';
 import AboutUs from '../components/aboutusIndex.jsx';
 import Services from '../components/servicesIndex.jsx';
 import Contact from '../components/contactIndex.jsx';
+import Footer from '../components/footerIndex.jsx';
 import '../assets/css/index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -14,5 +15,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <AboutUs />
     <Services />
     <Contact />
+    <Footer />
   </React.StrictMode>
 );
