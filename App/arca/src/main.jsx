@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import Banner from '../components/bannerIndex.jsx';
 import AboutUs from '../components/aboutusIndex';
+import Services from '../components/servicesIndex';
 import '../assets/css/index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -10,5 +11,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
     <Banner />
     <AboutUs />
+    <Services />
   </React.StrictMode>
 );
