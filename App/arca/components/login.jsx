@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../assets/css/login.scss";
 import "../assets/css/main.scss";
-import "../assets/img/icons/logo.svg";
 import loginImg from "../assets/img/Img-login.png";
 import desplegable from "../assets/img/icons/desplegable.svg";
 import insignia from "../assets/img/icons/id-insignia 1.svg";
@@ -44,7 +43,7 @@ function Login(){
                 </div>
               </div>
               <div className="con-ol">
-                <a href="#">¿Olvidaste tu contraseña?</a>
+                <Link to="/Forgotpassword">¿Olvidaste tu contraseña?</Link>
               </div>
               <div className="con-btns">
                 <Link to="/">Volver</Link>
