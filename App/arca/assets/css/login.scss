@@ -1,3 +1,5 @@
+$main-color: var(--main-color);
+
 .con-login{
     display: grid;
     column-gap: 5vw;
@@ -124,11 +126,6 @@
 .number-input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
-}
-
-/* Firefox */
-.number-input {
-    -moz-appearance: textfield;
 }
 
 .ico-input{
