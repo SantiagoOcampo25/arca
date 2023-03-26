@@ -23,7 +23,7 @@ function Enterpin(){
             <form onSubmit={''} className="form-pin">
                 <div className="form-floating">
                     <input type="text" className="form-control" placeholder="PIN de recuperacion" id="pin" name="pin" required />
-                    <label for="pin">PIN de recuperacion</label>
+                    <label htmlFor="pin">PIN de recuperacion</label>
                     <span className="ico-input"><img src={retrato} alt="Imagen retrato" /></span>
                 </div>
                 <div className="con-buttons">

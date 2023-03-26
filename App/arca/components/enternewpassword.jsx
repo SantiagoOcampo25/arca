@@ -22,12 +22,12 @@ function Enternewpassword(){
 	            <form onSubmit={''} className="form-pin"> 
                     <div className="form-floating">
                         <input type="password" className="form-control" id="contrasena" placeholder="Contraseña" name="contrasena" maxlength="15" required />
-                        <label for="contrasena">Contraseña</label>
+                        <label htmlFor="contrasena">Contraseña</label>
                     </div>
                     <div className="form-floating">
                         <input type="password" className="form-control" id="confirmar_contrasena" placeholder="Confirmar Contraseña" name="confirmar_contrasena" maxlength="15" />
 
-                        <label for="confirmar_contrasena">Confirmar Contraseña</label>
+                        <label htmlFor="confirmar_contrasena">Confirmar Contraseña</label>
                     </div>
                     <div className="con-buttons">
 						<div className="con-btn-back">

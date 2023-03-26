@@ -23,7 +23,7 @@ function Forgotpassword(){
 				<form onSubmit={''} className="form-recovery">
 					<div className="form-floating">
               <input type="email" className="form-control" id="correoElectronico_U" placeholder="Correo electronico" name="correoElectronico_U" required />
-              <label for="correoElectronico_U">Correo electrónico</label>
+              <label htmlFor="correoElectronico_U">Correo electrónico</label>
               <span className="ico-input"><img src={sobreinput} alt="Imagen input correo" /></span>
           </div>
 					<div className="con-buttons">
