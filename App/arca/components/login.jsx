@@ -46,8 +46,8 @@ function Login(){
                 <Link to="/Forgotpassword">¿Olvidaste tu contraseña?</Link>
               </div>
               <div className="con-btns">
-                <Link to="/">Volver</Link>
-                <input type="submit" value="Ingresar" />
+                <div className="btn-back"><Link to="/">Volver</Link></div>
+                <div className="btn-enter"><Link to="/Dashboard"><input type="submit" value="Ingresar"></input></Link></div>
               </div>
             </form>
           </div>
