@@ -4,6 +4,9 @@ import Login from "../components/login";
 import Forgotpassword from "../components/forgotpassword";
 import Enterpin from "../components/enterpin";
 import Enternewpassword from "../components/enternewpassword";
+import Sidebar from "../components/sidebar";
+import Navbar from "../components/navbar";
+import Dashboard from "../components/dashboard";
 
 
 function App() {
@@ -15,6 +18,9 @@ function App() {
       <Route path='/Forgotpassword' element={<Forgotpassword />} />
       <Route path='/Enterpin' element={<Enterpin />} />
       <Route path='/Enternewpassword' element={<Enternewpassword />} />
+      <Route path='/Sidebar' element={<Sidebar />} />
+      <Route path='/Navbar' element={<Navbar />} />
+      <Route path='/Dashboard' element={<Dashboard />} />
     </Routes>
   )
 }  
