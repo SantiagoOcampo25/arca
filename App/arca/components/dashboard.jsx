@@ -34,9 +34,9 @@ function Dashboard(){
                 </div>
                 <div className="con-pqrsf">
                     <div className="title-pqrsf">PQRSF recientes</div>
-                        <div class='body-spqrsf'>
-                            <div class='img-spqrsf'><img src='../assets/img/sin_citas.svg' alt='' /></div>
-                            <div class='text-spqrsf'>No hay PQRSF sin responder</div>
+                        <div className="body-spqrsf">
+                            <div className="img-spqrsf"><img src='../assets/img/sin_citas.svg' alt='' /></div>
+                            <div className="text-spqrsf">No hay PQRSF sin responder</div>
                     </div>
                 </div>
             </div>
