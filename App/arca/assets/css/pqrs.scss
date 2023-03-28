@@ -1,3 +1,5 @@
+$main-color: #483D8B;
+
 body{
     background: #FBFCFC;
 }
@@ -12,17 +14,18 @@ body{
     row-gap: 30px;
     grid-template-columns: 100%;
 }
-.head-form{
+.head-form-{
     display: grid;
     row-gap: 15px;
+    color: black;
 }
-.head-form h2{
+.head-form- h2{
     font-weight: bold;
     font-family: 'Poppins';
     padding: 0px;
     margin: 0px;
 }
-.head-form p{
+.head-form- p{
     padding: 0px;
     margin: 0px;
     font-family: 'Nunito';
@@ -40,7 +43,7 @@ body{
 .detail-so h4, .form-ba h4{
     padding: 0;
     margin: 0;
-    color: var(--main-color);
+    color: $main-color;
     font-weight: 500;
     font-family: 'Nunito';
     font-size: 18px;
@@ -139,7 +142,7 @@ input[type="file"]{
     padding: 0px;
     margin: 0px;
 }
-.foo-form{
+.btn-foo-form{
     display: grid;
     grid-template-columns: 160px;
     grid-template-rows:  50px 50px;
@@ -150,7 +153,7 @@ input[type="file"]{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
-.foo-form a{
+.btn-foo-form a{
     background: #FBFCFC;
     color: rgba(23, 32, 42, 0.5);
     text-decoration: none;
@@ -159,8 +162,8 @@ input[type="file"]{
     align-items: center;
     border-radius: 20px;
 }
-.foo-form input{
-    background: var(--main-color);
+.btn-foo-form input{
+    background: $main-color;
     color: #FBFCFC;
     border: none;
     border-radius: 20px;
@@ -226,7 +229,7 @@ input[type="file"]{
     .con-file{
         grid-column: 1/2;
     }
-    .foo-form{
+    .btn-foo-form{
         grid-template-columns: repeat(2, 160px);
         grid-template-rows:  50px;
     }

@@ -8,6 +8,7 @@ import Sidebar from "../components/sidebar";
 import Navbar from "../components/navbar";
 import Dashboard from "../components/dashboard";
 import HelpCenter from "../components/helpcenter";
+import Pqrsf from "../components/pqrsf";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Route path='/Navbar' element={<Navbar />} />
       <Route path='/Dashboard' element={<Dashboard />} />
       <Route path='/HelpCenter' element={<HelpCenter />} />
+      <Route path='/Pqrsf' element={<Pqrsf />} />
     </Routes>
   )
 }  

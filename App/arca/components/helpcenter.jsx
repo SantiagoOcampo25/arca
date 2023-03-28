@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useState } from 'react';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
@@ -217,7 +218,7 @@ function HelpCenter(){
           </h2>
           <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div className="accordion-body">
-              <p>1. Ingresar al modulo de PQRSF.</p>
+              <Link to="/Pqrsf"><p>1. Ingresar al modulo de PQRSF.</p></Link>
               <p>2. Ingresa cuidadosamente los datos solicitados.</p>
               <p>3. Oprime el boton enviar.</p>
               <p>4. ¡Listo! Espera el correo del equipo de soporte Arca</p>
