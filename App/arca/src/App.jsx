@@ -7,6 +7,7 @@ import Enternewpassword from "../components/enternewpassword";
 import Sidebar from "../components/sidebar";
 import Navbar from "../components/navbar";
 import Dashboard from "../components/dashboard";
+import HelpCenter from "../components/helpcenter";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Route path='/Sidebar' element={<Sidebar />} />
       <Route path='/Navbar' element={<Navbar />} />
       <Route path='/Dashboard' element={<Dashboard />} />
+      <Route path='/HelpCenter' element={<HelpCenter />} />
     </Routes>
   )
 }  

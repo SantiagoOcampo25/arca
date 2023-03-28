@@ -152,7 +152,7 @@ function Sidebar(){
             </div>
             <h3>Centro de ayuda</h3>
             <p>Tienes problemas con Arca. Resuelve tus dudas aqui.</p>
-            <a href="#">Ir a centro de ayuda</a>
+            <Link to="/HelpCenter">Ir a centro de ayuda</Link>
         </div>
         <a className="item-help" href="">
             <div className="color-item"></div>
