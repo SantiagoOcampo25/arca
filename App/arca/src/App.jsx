@@ -9,6 +9,7 @@ import Navbar from "../components/navbar";
 import Dashboard from "../components/dashboard";
 import HelpCenter from "../components/helpcenter";
 import Pqrsf from "../components/pqrsf";
+import ManageUsers from "../components/manageUsers";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Route path='/Dashboard' element={<Dashboard />} />
       <Route path='/HelpCenter' element={<HelpCenter />} />
       <Route path='/Pqrsf' element={<Pqrsf />} />
+      <Route path='/ManageUsers' element={<ManageUsers />} />
     </Routes>
   )
 }  

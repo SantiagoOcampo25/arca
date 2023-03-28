@@ -109,13 +109,13 @@ function Sidebar(){
             <div className="name-item">Horarios</div>
         </a>
         
-                <a className="item-sidebar" href="#">
+        <Link className="item-sidebar" to="/ManageUsers">
             <div className="color-item"></div>
             <div className="con-ico-item">
                 <img src={usersimg} alt="Gestion de usuarios" />
             </div>
             <div className="name-item">Gestion usuarios</div>
-        </a>
+        </Link>
 
         <a className="item-sidebar" href="#">
             <div className="color-item"></div>
