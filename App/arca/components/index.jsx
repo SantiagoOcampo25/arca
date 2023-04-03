@@ -8,12 +8,12 @@ import Footer from '../components/footerIndex.jsx';
 function Index(){
   return (
     <div>
-    <Banner />
-    <AboutUs />
-    <Services />
-    <Contact />
-    <Footer />
-</div>
+      <Banner />
+      <AboutUs />
+      <Services />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 

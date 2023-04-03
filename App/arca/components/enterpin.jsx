@@ -5,6 +5,7 @@ import retrato from "../assets/img/icons/retratoIn.svg"
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/main.scss";
 import "../assets/css/enterPin.scss";
+import "../assets/css/formfloating1.scss";
 
 function Enterpin(){
   return (

@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom"; 
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import imagen from "../assets/img/Imagen.png";
 import sobreinput from "../assets/img/icons/sobre 1.svg";
 import "../assets/css/main.scss";
+import "../assets/css/formfloating1.scss";
 import "../assets/css/recoveryPass.scss";
+import "../assets/css/button.scss";
 
 function Forgotpassword(){
   return (
@@ -28,10 +29,10 @@ function Forgotpassword(){
           </div>
 					<div className="con-buttons">
 						<div className="con-btn-back">
-                    		<Link to="/Login"><input id="btn-back" type="button" value="Volver"></input></Link>
+                    		<Link to="/Login"><button id="btn-back" type="button">Volver</button></Link>
             </div>
 						<div className="con-btn-recovery">
-                    		<Link to="/Enterpin"><input id="btn-recovery" type="submit" value="Aceptar"></input></Link>
+                    		<Link to="/Enterpin"><button id="btn-recovery" type="submit">Aceptar</button></Link>
             </div>
 					</div>
 				</form>

@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from 'react';
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
 import "../assets/css/components.scss";
 import "../assets/css/main.scss";
 import "../assets/css/helpCenter.scss";

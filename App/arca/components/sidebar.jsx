@@ -1,18 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom"; 
 import { useState } from "react";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/components.scss";
 import "../assets/css/helpCenter.scss";
 import "../assets/css/main.scss";
 import menuimg from "../assets/img/icons/menu-burger.svg";
 import arcalogo from "../assets/img/icons/logo.svg";
+import Itemssidebar from "./itemssidebar";
+import Footersidebar from "./footersidebar";
 import dashboardimg from "../assets/img/icons/ico_apps-font_vio}.svg";
 import estetoscopioimg from "../assets/img/icons/ico_stethoscope.svg";
 import usersimg from "../assets/img/icons/users-alt-free-icon-font.svg";
 import documentimg from "../assets/img/icons/ico_document-signed.svg";
 import userprofile from "../assets/img/icons/ico_user-free-icon-font (1).svg";
-import help from "../assets/img/icons/help.svg";
 
 
 function Sidebar(){
@@ -35,7 +34,6 @@ function Sidebar(){
         imgArca.style.width = "85.5px";
         imgArca.style.height = "35px";
         conHelp.style.display = "grid";
-        itemHelp.style.display = "none";
       }, 500);
     } else {
       setTimeout(() => {
@@ -46,13 +44,13 @@ function Sidebar(){
         imgArca.style.width = "30px";
         imgArca.style.height = "35px";
         conHelp.style.display = "none";
-        itemHelp.style.display = "grid";
       }, 500);
     }
   }
 
   function menu() {
     const sidebar = document.querySelector('.body-dashboard');
+    const conDash = document.querySelector('.container-dashboard');
     const btnSideBar = document.querySelector('.btn-des-sidebar');
     const imgBtn = document.querySelector('.img-btn');
     const imgArca = document.getElementById('arca-logo');
@@ -70,7 +68,7 @@ function Sidebar(){
     if (estadoMenu) {
       sidebar.style.left = "-260px";
       btnMenu.style.left = "-6000px";
-      btnMenu.style.right = "auto";
+      btnMenu.style.right = "auto"; 
       setEstadoMenu(false);
       body.style.overflowY = "auto";
     } else {
@@ -82,88 +80,57 @@ function Sidebar(){
     }
   }
   return (
-    <>
+<>
     <div className="head-sidebar">
         <div className="menu" onClick={menu}>
             <img src={menuimg} alt="Menu" />
         </div>
         <a className="arca" href="#">
             <img src={arcalogo} alt="Arca logo" id="arca-logo" />
-        </a>
+        </a>        
     </div>
-<div className="body-dashboard">
-    <div className="con-item">
-        
-        <Link className="item-sidebar item-active" to="/Dashboard">
-            <div className="color-item color-item-active"></div>
-            <div className="con-ico-item">
-                <img src={dashboardimg} alt="Dashboard" />
-            </div>
-            <div className="name-item">Dashboard</div>
-        </Link>
-        <a className="item-sidebar" href="#">
-            <div className="color-item"></div>
-            <div className="con-ico-item">
-                <img src={estetoscopioimg} alt="" />
-            </div>
-            <div className="name-item">Horarios</div>
-        </a>
-        
-        <Link className="item-sidebar" to="/ManageUsers">
-            <div className="color-item"></div>
-            <div className="con-ico-item">
-                <img src={usersimg} alt="Gestion de usuarios" />
-            </div>
-            <div className="name-item">Gestion usuarios</div>
-        </Link>
-
-        <a className="item-sidebar" href="#">
-            <div className="color-item"></div>
-            <div className="con-ico-item">
-                <img src={documentimg} alt="" />
-            </div>
-            <div className="name-item">PQRSF</div>
-        </a>
-        <a className="item-sidebar section-item">
-            <div className="color-item"></div>
-            <div className="con-ico-item"></div>
-            <div className="name-item">Ajustes</div>
-        </a>
-
-        <a className="item-sidebar item-perfil" href="#">
-            <div className="color-item"></div>
-            <div className="con-ico-item">
-                <img src={userprofile} alt="Perfil Usuario" />
-            </div>
-            <div className="name-item">Perfil</div>
-        </a>
-        <a className="item-sidebar item-seg" href="#">
-            <div className="color-item"></div>
-            <div className="con-ico-item">
-                <img src="#" alt="" />
-            </div>
-            <div className="name-item">Seguridad</div>
-        </a>
-    </div>
-    <div className="con-foo-sidebar">
-        <div className="con-help-center">
-            <div className="head-help">
-                <img src={help} alt="Ayuda" />
-            </div>
-            <h3>Centro de ayuda</h3>
-            <p>Tienes problemas con Arca. Resuelve tus dudas aqui.</p>
-            <Link to="/HelpCenter">Ir a centro de ayuda</Link>
+        <div className="body-dashboard">
+          <div className="con-item">
+            <Itemssidebar
+              to="/Dashboard"
+              imgSrc={dashboardimg}
+              alt="Dashboard"
+              name="Dashboard"
+            />
+            <Itemssidebar
+              to="#"
+              imgSrc={estetoscopioimg}
+              alt="Horarios"
+              name="Horarios"
+            />
+            <Itemssidebar
+              to="/ManageUsers"
+              imgSrc={usersimg}
+              alt="Gestión de usuarios"
+              name="Gestión de usuarios"
+            />
+            <Itemssidebar
+              to="#"
+              imgSrc={documentimg}
+              alt="PQRSF"
+              name="PQRSF"
+            />
+            <Itemssidebar name="Ajustes" />
+            <Itemssidebar
+              to="#"
+              imgSrc={userprofile}
+              alt="Perfil de usuario"
+              name="Perfil de usuario"
+            />
+            <Itemssidebar name="Seguridad" />
         </div>
-        <a className="item-help" href="">
-            <div className="color-item"></div>
-        </a>
-    </div>
-</div>
-<div className="btn-des-sidebar" onClick={despSidebar}>
-    <img src="../assets/img/icons/angle-double-small-left-free-icon-font.svg" alt="" className="img-btn" />
-</div>
-    <div className="con-sidebar-a" onClick={menu}>
-</div>
+            <Footersidebar />
+        </div>
+        <div className="btn-des-sidebar" onClick={despSidebar}>
+            <img src="../assets/img/icons/angle-double-small-left-free-icon-font.svg" alt="" className="img-btn" />
+        </div>
+            <div className="con-sidebar-a" onClick={menu}>
+        </div>
 </>
   );
 }
