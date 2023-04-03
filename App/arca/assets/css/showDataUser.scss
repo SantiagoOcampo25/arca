@@ -1,3 +1,5 @@
+@import 'main.scss';
+
 .con-show-data-user{
     display: grid;
     grid-template-columns: 320px;
@@ -25,7 +27,7 @@
     align-items: space-between;
 }
 .con-show-data-dir h3{
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-size: 1.04rem;
     font-weight: bold;
     display: flex;
@@ -34,7 +36,7 @@
     margin: 0;
 }
 .con-show-data-dir p{
-    font-family: 'Nunito';
+    font-family: $font-nunito;
     font-size: .9rem;
     display: flex;
     align-items: center;
@@ -49,12 +51,12 @@
     padding-bottom: 20px;
 }
 .item-title h2{
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-weight: bold;
     font-size: 1.3rem;
 }
 .item-show b{
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-size: 15px;
     margin: 0;
     padding: 0;
@@ -62,7 +64,7 @@
     align-self: flex-end;
 }
 .item-show p{
-    font-family: 'Nunito';
+    font-family: $font-nunito;
     font-size: 17px;
     margin: 0;
     padding: 0;
@@ -102,13 +104,13 @@
     row-gap: 20px;
 }
 .con-btn-show a{
-    background-color: var(--main-color);
+    background-color: $main-color;
     display: grid;
     justify-items: center;
     align-items: center;
     color: #FBFCFC;
     border-radius: 10px;
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-weight: bold;
     text-decoration: none;
     transition: all 0.7S;

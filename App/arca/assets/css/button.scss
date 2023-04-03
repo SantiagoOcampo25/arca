@@ -1,0 +1,56 @@
+@import 'main.scss';
+
+.con-btn-recovery,.con-btn-back{
+    display: grid;
+    justify-content: center;
+    padding-bottom: 50px;
+
+}
+.con-btn-recovery button{
+    background: $main-color;
+    width: 205px;
+    height: 74px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    color: white;
+    font-family: $font-poppins;
+    font-size: 25px;
+    border: none;
+    border-style: none;
+    margin-top: 20px;
+}
+.con-btn-back button{
+    background: #F4F6F7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    width: 205px;
+    height: 74px;
+    color: rgba(23, 32, 42, 0.5);
+    font-family: $font-poppins;
+    font-size: 25px;
+    border: none;
+    border-style: none;
+    margin-top: 20px;
+}
+.btn-back a, .btn-enter button{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 0px;
+    border: none;
+    border-style: none;
+    text-decoration: none !important;
+    border-radius: 30px;
+    font-family: $font-poppins;
+    box-shadow: -1px 1px 1px 1px rgb(0 0 0/0.05);
+}
+.btn-back a{
+    background: white;
+    color: rgb(23, 32, 42, 0.5);
+}
+.btn-enter button{
+    background: $main-color;
+    color: white;
+}

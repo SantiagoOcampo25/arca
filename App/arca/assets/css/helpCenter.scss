@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import 'main.scss';
 
 .con-help-center-v{
     display: grid;
@@ -20,14 +19,14 @@
     align-content: center;
 }
 .info-help h3{
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-weight: bold;
     font-size: 27px;
     margin: 0px;
     padding: 0px;
 }
 .info-help p{
-    font-family: 'Nunito';
+    font-family: $font-nunito;
     font-size: 18px;
     margin: 0px;
     padding: 0px;
@@ -54,7 +53,7 @@
 }
 
 .con-inpt  input{
-    font-family: 'Nunito';
+    font-family: $font-nunito;
     font-weight: lighter;
     color: rgba(0, 0, 0, 0.622);
     font-size: 1.1rem;
@@ -76,7 +75,7 @@
     padding-left: 30px;
     padding-right: 30px;
     font-weight: bold;
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     color: rgba(23, 32, 42, 0.5);
     font-size: 19px;
     display: flex;
@@ -93,7 +92,7 @@
 
 .item-help-selected{
     background: rgba(71, 61, 139, 0.5);
-    color: var(--main-color);
+    color: $main-color;
 
 }
 .item-help-selected img{
@@ -115,7 +114,7 @@
 }
 .footer-help-center a{
     background: #F4F6F7;
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-weight: 550;
     width: 160px;
     text-align: center;
@@ -124,19 +123,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--main-color);
+    color: $main-color;
     font-size: 16px;
     border-radius: 10px;
-    border: 1px solid var(--main-color);
+    border: 1px solid $main-color;
     border-style:inset;
 }
 .footer-help-center h4{
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-weight: bold;
     font-size: 20px;
 }
 .footer-help-center p{
-    font-family: 'Nunito';
+    font-family: $font-nunito;
     font-size: 17px;
 }
 
@@ -147,18 +146,18 @@
 
 .accordion-button:not(.collapsed){
     background: rgba(71, 61, 139, 0.15);
-    color: var(--main-color);
+    color: $main-color;
     font-weight: bold;
 }
 .accordion-button{
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-size: 1.3rem;
     font-weight: 600;
     height: 75px;
     color: rgba(23, 32, 42, 0.5);
 }
 .accordion-body{
-    font-family: 'Nunito';
+    font-family: $font-nunito;
 }
 .accordion-item{
     border: none;
@@ -189,13 +188,18 @@ hr{
 .item-help:hover{
     cursor: pointer;
     background: rgba(71, 61, 139, 0.5);
-    color: var(--main-color);
+    color: $main-color;
 }
 .acordion-sect{
     display: none;
 }
 .acordion-sect-selected{
     display: block !important;
+}
+.help-center-btn{
+    border-style: none;
+    border-radius: 10px; 
+    height: 40px;
 }
 @media (min-width:1020px){
     .con-help-center-v{

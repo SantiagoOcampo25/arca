@@ -1,3 +1,5 @@
+@import 'main.scss';
+
 body{
     background: #FBFCFC;
 }
@@ -21,7 +23,7 @@ body{
     justify-content: end;
 }
 .head-1 h2{
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-poppins;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
@@ -29,46 +31,16 @@ body{
 }
 .head-2 p{
     text-align: center;
-    font-family: 'Nunito';
+    font-family: $font-nunito;
     font-size: 20px;
     padding: 0px;
     margin: 0px;
     margin-top: 20px;
 }
 .head-2 p a{
-    color: var(--main-color);
+    color: $main-color;
     text-decoration: none;
     font-weight: 600;
-}
-.form-floating{
-    position: relative;
-}
-
-.form-floating select, .form-floating input{
-    font-family: 'Poppins';
-    font-weight: 590;
-    font-family: 'Poppins';
-    font-weight: 600;
-
-    background: rgb(244 246 247/0.7);
-    border: none;
-    box-shadow: -1px 1px 1px 1px rgb(0 0 0/0.05);
-    border-radius: 15px;
-}
-.form-floating select option, .form-floating label, .form-floating input::placeholder{
-    font-family: 'Nunito';
-}
-
-.date-input::-webkit-calendar-picker-indicator{
-    background: none;
-}
-:-webkit-input{
-    background: none;
-}
-.number-input::-webkit-outer-spin-button,
-.number-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
 }
 
 .ico-input{
@@ -96,12 +68,12 @@ body{
 
 }
 .con-btn-register input{
-    background: var(--main-color);
+    background: $main-color;
     width: 120px;
     height: 50px;
     border-radius: 20px;
     color: white;
-    font-family: 'Nunito';
+    font-family: $font-nunito;
     border: none;
     border-style: none;
     margin-top: 20px;

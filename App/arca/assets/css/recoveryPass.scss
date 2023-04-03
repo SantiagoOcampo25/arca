@@ -1,4 +1,4 @@
-$main-color: #483D8B;
+@import 'main.scss';
 
 body{
     background: #FBFCFC;
@@ -32,7 +32,7 @@ body{
 
 }
 .head-1 h2{
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-poppins;
     font-size: 65px;
     font-weight: bold;
     text-align: center;
@@ -45,7 +45,7 @@ body{
 
 .head-2 h3{
     text-align: end;
-    font-family: 'Nunito';
+    font-family: $font-nunito;
     font-style: normal;
     font-size: 32px;
     color: #17202A;
@@ -53,36 +53,6 @@ body{
 .head-2 h3{
     text-decoration: none;
     font-weight: 600;
-}
-.form-floating{
-    position: relative;
-}
-
-.form-floating select, .form-floating input{
-    font-family: 'Poppins';
-    font-weight: 590;
-    font-family: 'Poppins';
-    font-weight: 600;
-
-    background: rgb(244 246 247/0.7);
-    border: none;
-    box-shadow: -1px 1px 1px 1px rgb(0 0 0/0.05);
-    border-radius: 15px;
-}
-.form-floating select option, .form-floating label, .form-floating input::placeholder{
-    font-family: 'Nunito';
-}
-
-.date-input::-webkit-calendar-picker-indicator{
-    background: none;
-}
-:-webkit-input{
-    background: none;
-}
-.number-input::-webkit-outer-spin-button,
-.number-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
 }
 .con-buttons{
     display: grid;
@@ -107,35 +77,4 @@ body{
     display: grid;
     row-gap: 20px;
 }
-.con-btn-recovery,.con-btn-back{
-    display: grid;
-    justify-content: center;
-    padding-bottom: 50px;
 
-}
-.con-btn-recovery input{
-    background: $main-color;
-    width: 205px;
-    height: 74px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 40px;
-    color: white;
-    font-family: 'Poppins';
-    font-size: 25px;
-    border: none;
-    border-style: none;
-    margin-top: 20px;
-}
-.con-btn-back input{
-    background: #F4F6F7;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 40px;
-    width: 205px;
-    height: 74px;
-    color: rgba(23, 32, 42, 0.5);
-    font-family: 'Poppins';
-    font-size: 25px;
-    border: none;
-    border-style: none;
-    margin-top: 20px;
-}

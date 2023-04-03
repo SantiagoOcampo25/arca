@@ -1,3 +1,5 @@
+@import 'main.scss';
+
 /* Vista editar */
 /* .body-contenido{
     padding-left: 150px;
@@ -30,7 +32,7 @@
     align-items: space-between;
 }
 .con-show-data-dir h3{
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-size: 1.04rem;
     font-weight: bold;
     display: flex;
@@ -39,7 +41,7 @@
     margin: 0;
 }
 .con-show-data-dir p{
-    font-family: 'Nunito';
+    font-family: $font-nunito;
     font-size: .9rem;
     display: flex;
     align-items: center;
@@ -54,12 +56,12 @@
     padding-bottom: 20px;
 }
 .item-title h2{
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-weight: bold;
     font-size: 1.3rem;
 }
 .item-show b{
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-size: 15px;
     margin: 0;
     padding: 0;
@@ -67,7 +69,7 @@
     align-self: flex-end;
 }
 .item-show p{
-    font-family: 'Nunito';
+    font-family: $font-nunito;
     font-size: 17px;
     margin: 0;
     padding: 0;
@@ -106,13 +108,13 @@
     margin-top: 50px;
 }
 .con-btn-show a{
-    background-color: var(--main-color);
+    background-color: $main-color;
     display: grid;
     justify-items: center;
     align-items: center;
     color: #FBFCFC;
     border-radius: 10px;
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-weight: bold;
     text-decoration: none;
     transition: all 0.7S;
@@ -129,42 +131,6 @@
 
 /* View editar */
 
-/* style input */
-.form-floating{
-    position: relative;
-}
-
-.form-floating select, .form-floating input{
-    font-family: 'Poppins';
-    font-family: 'Poppins';
-    font-weight: 550;
-
-    background: rgb(244 246 247/0.7);
-    border: none;
-    box-shadow: -1px 1px 1px 1px rgb(0 0 0/0.05);
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-
-.date-input::-webkit-calendar-picker-indicator{
-    background: none;
-}
-:-webkit-input{
-    background: none;
-}
-.number-input::-webkit-outer-spin-button,
-.number-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-/* Firefox */
-.number-input {
-    -moz-appearance: textfield;
-}
-.form-floating select option, .form-floating label, .form-floating input::placeholder{
-    font-family: 'Nunito';
-}
 
 .ico-input{
     position: absolute;
@@ -187,15 +153,15 @@
     cursor: pointer;
 }
 .form-check-input:checked{
-    background-color: var(--main-color);
+    background-color: $main-color;
 }
 .con-btn-show input{
-    background-color: var(--main-color);
+    background-color: $main-color;
     justify-items: center;
     align-items: center;
     color: #FBFCFC;
     border-radius: 10px;
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-weight: bold;
     text-decoration: none;
     transition: all 0.7S;

@@ -1,4 +1,4 @@
-$main-color: #483D8B;
+@import 'main.scss';
 
 body{
     background: #FBFCFC;
@@ -32,7 +32,7 @@ body{
 
 }
 .head-1 h2{
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-poppins;
     font-size: 65px;
     font-weight: bold;
     text-align: center;
@@ -45,7 +45,7 @@ body{
 
 .head-2 h3{
     text-align: end;
-    font-family: 'Nunito';
+    font-family: $font-nunito;
     font-style: normal;
     font-size: 32px;
     color: #17202A;
@@ -54,36 +54,7 @@ body{
     text-decoration: none;
     font-weight: 600;
 }
-.form-floating{
-    position: relative;
-}
 
-.form-floating select, .form-floating input{
-    font-family: 'Poppins';
-    font-weight: 590;
-    font-family: 'Poppins';
-    font-weight: 600;
-
-    background: rgb(244 246 247/0.7);
-    border: none;
-    box-shadow: -1px 1px 1px 1px rgb(0 0 0/0.05);
-    border-radius: 15px;
-}
-.form-floating select option, .form-floating label, .form-floating input::placeholder{
-    font-family: 'Nunito';
-}
-
-.date-input::-webkit-calendar-picker-indicator{
-    background: none;
-}
-:-webkit-input{
-    background: none;
-}
-.number-input::-webkit-outer-spin-button,
-.number-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
 .con-buttons{
     display: grid;
     grid-template-rows: 0%;
@@ -120,7 +91,7 @@ body{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
     color: white;
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-size: 25px;
     border: none;
     border-style: none;
@@ -133,7 +104,7 @@ body{
     width: 205px;
     height: 74px;
     color: rgba(23, 32, 42, 0.5);
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-size: 25px;
     border: none;
     border-style: none;

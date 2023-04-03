@@ -1,3 +1,5 @@
+@import 'main.scss';
+
 .con-table-ci{
     display: grid;
     grid-template-columns: 100%;
@@ -19,5 +21,5 @@
     align-content: center;
 }
 .form-check-input:checked{
-    background-color: var(--main-color);
+    background-color: $main-color;
 }

@@ -1,3 +1,5 @@
+@import 'main.scss';
+
 .con-update-profile{
     display: grid;
     grid-template-columns: 100%;
@@ -19,11 +21,11 @@
     padding: 40px;
 }
 .head-form-profile{
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    color: var(--main-color);
+    color: $main-color;
 }
 .body-form-profile{
     display: grid;
@@ -61,7 +63,7 @@
     border-radius: 10px;
 }
 .footer-form-profile > input{
-    background-color: var(--main-color);
+    background-color: $main-color;
     color: #fff;
     font-weight: bold;
     border: none;

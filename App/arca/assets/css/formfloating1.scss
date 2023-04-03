@@ -1,0 +1,32 @@
+@import 'main.scss';
+
+.form-floating{
+    position: relative;
+}
+
+.form-floating select, .form-floating input{
+    font-family: $font-poppins;
+    font-weight: 590;
+    font-family: $font-poppins;
+    font-weight: 600;
+
+    background: rgb(244 246 247/0.7);
+    border: none;
+    box-shadow: -1px 1px 1px 1px rgb(0 0 0/0.05);
+    border-radius: 15px;
+}
+.form-floating select option, .form-floating label, .form-floating input::placeholder{
+    font-family: $font-nunito;
+}
+
+.date-input::-webkit-calendar-picker-indicator{
+    background: none;
+}
+:-webkit-input{
+    background: none;
+}
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
