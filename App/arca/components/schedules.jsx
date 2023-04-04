@@ -96,7 +96,7 @@ function Schedules(){
                             </div>
                         </div>
                         <div className="con-btn-cm">
-                            <input id="btn-cm" type="submit" value="Registrar" />
+                            <button id="btn-cm" type="submit">Registrar</button>
                         </div>
                     </div>
                 </div>
