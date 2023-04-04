@@ -14,7 +14,7 @@ import documentimg from "../assets/img/icons/ico_document-signed.svg";
 import userprofile from "../assets/img/icons/ico_user-free-icon-font (1).svg";
 
 
-function Sidebar(){
+function Sidebar() {
   const [estadoMenu, setEstadoMenu] = useState(false);
   function despSidebar() {
     const conDash = document.querySelector('.container-dashboard');
@@ -68,7 +68,7 @@ function Sidebar(){
     if (estadoMenu) {
       sidebar.style.left = "-260px";
       btnMenu.style.left = "-6000px";
-      btnMenu.style.right = "auto"; 
+      btnMenu.style.right = "auto";
       setEstadoMenu(false);
       body.style.overflowY = "auto";
     } else {
@@ -80,58 +80,58 @@ function Sidebar(){
     }
   }
   return (
-<>
-    <div className="head-sidebar">
+    <>
+      <div className="head-sidebar">
         <div className="menu" onClick={menu}>
-            <img src={menuimg} alt="Menu" />
+          <img src={menuimg} alt="Menu" />
         </div>
         <a className="arca" href="#">
-            <img src={arcalogo} alt="Arca logo" id="arca-logo" />
-        </a>        
-    </div>
-        <div className="body-dashboard">
-          <div className="con-item">
-            <Itemssidebar
-              to="/Dashboard"
-              imgSrc={dashboardimg}
-              alt="Dashboard"
-              name="Dashboard"
-            />
-            <Itemssidebar
-              to="#"
-              imgSrc={estetoscopioimg}
-              alt="Horarios"
-              name="Horarios"
-            />
-            <Itemssidebar
-              to="/ManageUsers"
-              imgSrc={usersimg}
-              alt="Gestión de usuarios"
-              name="Gestión de usuarios"
-            />
-            <Itemssidebar
-              to="#"
-              imgSrc={documentimg}
-              alt="PQRSF"
-              name="PQRSF"
-            />
-            <Itemssidebar name="Ajustes" />
-            <Itemssidebar
-              to="#"
-              imgSrc={userprofile}
-              alt="Perfil de usuario"
-              name="Perfil de usuario"
-            />
-            <Itemssidebar name="Seguridad" />
+          <img src={arcalogo} alt="Arca logo" id="arca-logo" />
+        </a>
+      </div>
+      <div className="body-dashboard">
+        <div className="con-item">
+          <Itemssidebar
+            to="/Dashboard"
+            imgSrc={dashboardimg}
+            alt="Dashboard"
+            name="Dashboard"
+          />
+          <Itemssidebar
+            to="/Schedules"
+            imgSrc={estetoscopioimg}
+            alt="Horarios"
+            name="Horarios"
+          />
+          <Itemssidebar
+            to="/ManageUsers"
+            imgSrc={usersimg}
+            alt="Gestión de usuarios"
+            name="Gestión de usuarios"
+          />
+          <Itemssidebar
+            to="/Pqrsftable"
+            imgSrc={documentimg}
+            alt="PQRSF"
+            name="PQRSF"
+          />
+          <Itemssidebar name="Ajustes" />
+          <Itemssidebar
+            to="#"
+            imgSrc={userprofile}
+            alt="Perfil de usuario"
+            name="Perfil de usuario"
+          />
+          <Itemssidebar name="Seguridad" />
         </div>
-            <Footersidebar />
-        </div>
-        <div className="btn-des-sidebar" onClick={despSidebar}>
-            <img src="../assets/img/icons/angle-double-small-left-free-icon-font.svg" alt="" className="img-btn" />
-        </div>
-            <div className="con-sidebar-a" onClick={menu}>
-        </div>
-</>
+        <Footersidebar />
+      </div>
+      <div className="btn-des-sidebar" onClick={despSidebar}>
+        <img src="../assets/img/icons/angle-double-small-left-free-icon-font.svg" alt="" className="img-btn" />
+      </div>
+      <div className="con-sidebar-a" onClick={menu}>
+      </div>
+    </>
   );
 }
 

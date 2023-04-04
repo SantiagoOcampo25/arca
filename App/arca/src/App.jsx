@@ -10,6 +10,8 @@ import Dashboard from "../components/dashboard";
 import HelpCenter from "../components/helpcenter";
 import Pqrsf from "../components/pqrsf";
 import ManageUsers from "../components/manageUsers";
+import Schedules from "../components/schedules";
+import Pqrsftable from "../components/pqrsftable";
 
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
       <Route path='/HelpCenter' element={<HelpCenter />} />
       <Route path='/Pqrsf' element={<Pqrsf />} />
       <Route path='/ManageUsers' element={<ManageUsers />} />
+      <Route path='/Schedules' element={<Schedules />} />
+      <Route path='/Pqrsftable' element={<Pqrsftable />} />
     </Routes>
   )
 }  
