@@ -13,9 +13,24 @@ import ManageUsers from "../components/manageUsers";
 import Schedules from "../components/schedules";
 import Pqrsftable from "../components/pqrsftable";
 
-
+const datosPQRSF = [
+  {
+    idUser: '1',
+    TipoPQRSF: 'Felicitacion',
+    Documento: 'CC 1022387239'
+  },
+  {
+    idUser: '2',
+    TipoPQRSF: 'Queja',
+    Documento: 'CC 1025587239'
+  },
+  {
+    idUser: '3',
+    TipoPQRSF: 'Reclamo',
+    Documento: 'CC 1029812239'
+  }
+]
 function App() {
-
   return (
     <Routes>
       <Route path='/' element={<Index />} />
@@ -30,7 +45,7 @@ function App() {
       <Route path='/Pqrsf' element={<Pqrsf />} />
       <Route path='/ManageUsers' element={<ManageUsers />} />
       <Route path='/Schedules' element={<Schedules />} />
-      <Route path='/Pqrsftable' element={<Pqrsftable />} />
+      <Route path='/Pqrsftable' element={<Pqrsftable datosPQRSF={datosPQRSF}/>} />
     </Routes>
   )
 }  
