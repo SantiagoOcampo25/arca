@@ -1,3 +1,5 @@
+@import 'main.scss';
+
 .con-ges-users{
     display: grid;
     grid-template-columns: 400px;
@@ -9,7 +11,7 @@
 .con-all-users a{
     color: rgb(23 32 42/0.6);
     text-decoration: none;
-    font-family: 'Nunito';
+    font-family: $font-nunito;
 }
 .con-all-users a img{
     margin-left: 20px;
@@ -38,11 +40,11 @@
 .con-form:nth-child(3){
     grid-row: 6/10;
 }
-.con-form-new{
+.conform-new{
     border-radius: 20px;
 }
 
-form{
+.FormUsers{
     background: #FBFCFC;
     border-radius: 20px;
     display: grid;
@@ -50,62 +52,60 @@ form{
     grid-template-rows: repeat(4, 57px);
     grid-template-columns: 70% 10%;
 }
-.head-form{
+.headform{
     grid-template-columns: 90% 10%;
     grid-column: 1/3;
-    grid-row: 1/2;
+    grid-row: 1/2;  
     display: grid;
     align-content: center;
 }
-.body-form{
+.bodyform{
     grid-row: 2/4;
     grid-column: 1/3;
     display: grid;
     align-content: center;
-    row-gap: 20px;
 }
-.body-form-users{
+.bodyform-users{
     row-gap: 10px;
 }
 
-.body-form #label-form{
+.bodyform #label-form{
     font-size: 15px;
-    font-family: 'Nunito';
+    font-family: $font-nunito;
 }
-.body-form .form-floating input{
+.bodyform .form-floating input{
     height: 50px;
 }
-.body-form .form-floating select{
+.bodyform .form-floating select{
     height: 50px;
-
 }
 
-.head-form h3{
-    font-family: 'Poppins';
+.headform h3{
+    font-family: $font-poppins;
     font-size: 22px;
     font-weight: 700;
     padding: 0px;
     margin: 0px;
 }
-.foo-form{
+.fooform{
     grid-row: 4/5;
     grid-column: 1/3;
     display: grid;
     align-content: center;
     justify-content: center;
 }
-.foo-form button{
+.fooform button{
     width: 140px;
     border-radius: 40px;
     height: 40px;
     border: none;
-    background: var(--main-color);
+    background: $main-color;
     color: white;
-    font-family: 'Poppins';
+    font-family: $font-poppins;
 }
 .form-floating input{
     font-size: 14px;
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-weight: 600;
 
     background: rgb(244 246 247/0.7);
@@ -114,12 +114,12 @@ form{
 }
 .form-floating label{
     font-size: 14px;
-    font-family: 'Nunito';
+    font-family: $font-nunito;
 }
 .form-floating .form-select{
     padding-top: 0.7rem;
     padding-bottom: 0px;
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-weight: 600;
     font-size: 14px;
 
@@ -131,26 +131,26 @@ form{
 .form-floating label{
     padding: .6rem .75rem;
 }
-.con-form-new{
+.conform-new{
     grid-row: 10/21;
     margin-bottom: 60px;
 }
 
-.con-form-new .body-form{
-    row-gap: 5px;
+.conform-new .body-form{
+    row-gap: 1px;
 }
 
-.con-form-new form{
+.conform-new form{
     grid-template-rows: 57px 258px 258px 57px;
 
 }
-.con-form-new form .form-select{
+.conform-new form .form-select{
     height: 40px;
 }
-.con-form-new form .form-floating input{
+.conform-new form .form-floating input{
     height: 40px;
 }
-.con-form-new form .body-form{
+.conform-new form .body-form{
     align-content: flex-start;
 }
 
@@ -165,7 +165,7 @@ input:focus{
         /* justify-content: space-between; */
         column-gap: 100px;
     }
-    .con-form-new{
+    .conform-new{
         grid-row: 1/11;
     }
 

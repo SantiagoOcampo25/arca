@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import 'main.scss';
 
 /* Start sidebar */
 .head-sidebar{
@@ -47,7 +46,7 @@
 }
 
 .item-sidebar{
-    font-family: 'Nunito', sans-serif;
+    font-family: $font-nunito;
     font-weight: bold;
     color: rgba(23 32 42/0.6);
     display: grid;
@@ -59,7 +58,7 @@
     gap: 15px;
 }
 .item-help{
-    font-family: 'Nunito', sans-serif;
+    font-family: $font-nunito;
     font-weight: bold;
     color: rgba(23 32 42/0.6);
     grid-template-columns: 8px 26px 208px;
@@ -80,10 +79,10 @@
     border-top-right-radius: 5px;
 }
 /* .item-active{
-    color: var(--main-color);
+    color: $main-color;
 }
 .item-active .color-item{
-    background: var(--main-color);
+    background: $main-color;
 } */
 
 .name-item{
@@ -167,14 +166,14 @@
     height: 55px;
 }
 .con-help-center h3{
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     text-align: center;
     font-size: 16px;
     padding-top: 30px;
     font-weight: 700;
 }
 .con-help-center p{
-    font-family: 'Nunito';
+    font-family: $font-nunito;
     font-size: 14px;
     text-align: center;
     padding: 0px;
@@ -190,7 +189,7 @@
     display: grid;
     justify-content: center;
     align-content: center;
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     color: black;
     font-size: 14px;
     font-weight: bold;
@@ -251,7 +250,7 @@
         display: grid;
         justify-items: flex-end;
         align-items: center;
-        font-family: 'Nunito';
+        font-family: $font-nunito;
         text-decoration: none;
     }
     .colm-dash-2 h4{
@@ -263,7 +262,7 @@
         row-gap: 2px;
     }
     .colm-dash-2 a{
-        color: var(--main-color);
+        color: $main-color;
         font-weight: bold;
         font-size: 1.2rem;
     }
@@ -321,10 +320,10 @@
     width: 95%;
 }
 table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control:before{
-    background: var(--main-color);
+    background: $main-color;
     box-shadow: none;
     /* border: none; */
-    font-family: 'Poppins';
+    font-family: $font-poppins;
 }
 table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td.dtr-control:before, table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th.dtr-control:before{
     background: #17202A;
@@ -335,16 +334,16 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td.dtr-control:before, tabl
     padding-top: 20px;
 }
 #table-co tr th{
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     text-align: center;
 }
 #table-co tr td{
-    font-family: 'Nunito';
+    font-family: $font-nunito;
     font-weight: lighter;
     text-align: center;
 }
 .dtr-title{
-    font-family: 'Poppins';
+    font-family: $font-poppins;
 }
 .dtr-details li{
     border: 0px !important;
@@ -369,7 +368,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td.dtr-control:before, tabl
     border-radius: 10px;
 }
 #table-co thead{
-    background: var(--main-color);
+    background: $main-color;
     color: white;
     /* text-align: center; */
 }
@@ -412,7 +411,7 @@ table.dataTable.display>tbody>tr.odd>.sorting_1, table.dataTable.order-column.st
     grid-template-columns: 50% 50%;
 }
 .info-table .section-1 h3{
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-weight: bold;
     padding: 0px;
     font-size: 23px;
@@ -425,7 +424,7 @@ table.dataTable.display>tbody>tr.odd>.sorting_1, table.dataTable.order-column.st
 }
 .section-2 a{
     text-decoration: none;
-    font-family: 'Nunito';
+    font-family: $font-nunito;
     color: #17202A;
 }
 #table-co_wrapper{
@@ -441,7 +440,7 @@ table.dataTable.display>tbody>tr.odd>.sorting_1, table.dataTable.order-column.st
     padding-bottom: 50px;
 }
 .dataTables_paginate{
-    font-family: 'Poppins';
+    font-family: $font-poppins;
 }
 .dataTables_length{
     padding-left: 13.7px;
@@ -574,18 +573,18 @@ table.dataTable.display>tbody>tr.odd>.sorting_1, table.dataTable.order-column.st
     row-gap: 10px;
 }
 .alert-show h4{
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-size: 1.2rem;
     font-weight: bold;
 }
 .alert-show p{
-    font-family: 'Nunito';
+    font-family: $font-nunito;
     font-style: italic;
     font-size: 1rem;
 }
 .alert-show p a{
-    color: var(--main-color);
-    font-family: 'Poppins';
+    color: $main-color;
+    font-family: $font-poppins;
     font-weight: 600;
     text-decoration: none;
 }

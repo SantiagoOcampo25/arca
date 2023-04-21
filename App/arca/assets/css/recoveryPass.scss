@@ -1,0 +1,80 @@
+@import 'main.scss';
+
+body{
+    background: #FBFCFC;
+}
+.con-img-pass img{
+    height: 100vh;
+}
+.con-recovery-password{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    row-gap: 30px;
+    height: calc(100vh - 50px);
+}
+.head-recovery{
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 20% 10% 10% 10%;
+    row-gap: 50px;
+    padding: 40px;
+    padding-right: 180px;
+    align-content: center;
+    justify-content: end;
+    justify-self: end;
+}
+.con-form-recoverypass{
+    display: grid;
+    grid-template-columns: 70%;
+    justify-content: end;
+
+}
+.head-1 h2{
+    font-family: $font-poppins;
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    text-align: end;
+}
+.head-1 span{
+    color: $main-color;
+}
+
+.head-2 h3{
+    text-align: end;
+    font-family: $font-nunito;
+    font-style: normal;
+    font-size: 32px;
+    color: #17202A;
+}
+.head-2 h3{
+    text-decoration: none;
+    font-weight: 600;
+}
+.con-buttons{
+    display: grid;
+    grid-template-rows: 0%;
+    grid-template-columns: 50% 50% !important;
+}
+.ico-input{
+    position: absolute;
+    right: 20px;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    top: 0px;
+}
+.ico-input-select img{
+    width: 30px;
+}
+.ico-input img{
+    height: 30px;
+}
+.form-recovery{
+    display: grid;
+    row-gap: 20px;
+}
+

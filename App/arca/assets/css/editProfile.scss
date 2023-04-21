@@ -1,3 +1,5 @@
+@import 'main.scss';
+
 .con-edit-profile{
     display: grid;
     grid-template-columns: 100%;
@@ -23,7 +25,7 @@
     justify-content: center;
     align-content: center;
     position: absolute;
-    background-color: var(--main-color);
+    background-color: $main-color;
     border-radius: 100%;
     width: 35px;
     height: 35px;
@@ -43,7 +45,7 @@
     grid-template-rows: auto;
 }
 .name-edit-title{
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-weight: bold;
     font-size: 20px;
 }
@@ -55,12 +57,12 @@
     justify-content: center;
     align-content: center;
     text-decoration: none;
-    background-color: var(--main-color);
+    background-color: $main-color;
     border-radius: 10px;
     width: 200px;
 }
 .btn-edit-title{
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-weight: bold;
     font-size: 15.5px;
     color: #fff;

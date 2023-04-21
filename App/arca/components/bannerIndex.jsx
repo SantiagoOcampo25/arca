@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../assets/css/index.scss'
 import '../assets/css/main.scss'
 
@@ -19,9 +20,9 @@ function Banner() {
           <a href="#Contacto" className="item-menu">
             Contacto
           </a>
-          <a href="./pres_login.php" className="item-menu btn-menu">
+          <Link to="/login" className="item-menu btn-menu">
             Ingresar
-          </a>
+          </Link>
         </nav>
       </header>
       <div className="banner">

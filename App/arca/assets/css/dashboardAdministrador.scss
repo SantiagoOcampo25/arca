@@ -1,3 +1,5 @@
+@import 'main.scss';
+
 .con-dashboard-admin{
     display: grid;
     grid-template-columns: 100%;
@@ -28,12 +30,12 @@
 .head-form{
     text-align:left;
     color: white;
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-size: 27px;
     font-weight: bold;
 }
 .body-form{
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-size: 18px;
     text-align:left;
     color: white
@@ -44,7 +46,7 @@
 .foo-form button{
     width: 200px;
     height: 70px;
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-size: 21px;
     font-weight: bold;
     background-color: black;
@@ -66,7 +68,7 @@
 }
 .flecha-users{
     grid-column: 1/1;
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     gap: 20px;
     text-decoration: none;
     color: white;
@@ -90,9 +92,9 @@
     row-gap: 30px;
 }
 .title-pqrsf{
-    color: var(--main-color);
+    color: $main-color;
     font-weight: bold;
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     font-size: 22px;
 }
 .con-info-pqrsf{
@@ -104,7 +106,7 @@
     display: grid;
     align-items: center;
     text-align: center;
-    font-family: 'Poppins';
+    font-family: $font-poppins;
     grid-template-columns: 100%;
     grid-template-rows: 70px 10px 70px 130px 80px;
     border-radius: 10px;
@@ -130,7 +132,7 @@
     display: grid;
     align-content: center;
     justify-items: center;
-    color: var(--main-color);
+    color: $main-color;
     font-weight: bold;
     border-radius: 15px;
     height: 40px;
@@ -167,12 +169,12 @@
 }
 .text-date-info-pqrsf{
     font-size: 18;
-    font-family: 'Nunito';
+    font-family: $font-nunito;
 }
 
 .footer-info-pqrsf{
     display: grid;
-    background-color: var(--main-color);
+    background-color: $main-color;
     text-decoration: none;
     align-content: center;
     font-weight: bold;
@@ -288,7 +290,7 @@
     }
     .text-date-info-pqrsf{
         font-size: 18;
-        font-family: 'Nunito';
+        font-family: $font-nunito;
     }
   }
 
