@@ -2,8 +2,8 @@ import React from "react";
 import "../assets/css/components.scss";
 import "../assets/css/main.scss";
 import "../assets/css/editProfile.scss";
-import ProfileHead from "./ProfileHead";
-import ProfileBody from "./ProfileBody";
+import ProfileHead from "./profilehead";
+import ProfileBody from "./profilebody";
 
 function Profile(){
     return (

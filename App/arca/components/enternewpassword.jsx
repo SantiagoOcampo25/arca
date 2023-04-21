@@ -5,7 +5,7 @@ import "../assets/css/main.scss";
 import "../assets/css/enterPin.scss";
 import "../assets/css/titles.scss";
 
-function EnterNewPassword(){
+function Enternewpassword(){
   return (
     <div className="con-recovery-password">
 		<div className="con-img-pass">
@@ -44,4 +44,4 @@ function EnterNewPassword(){
   );
 }
 
-export default EnterNewPassword;
+export default Enternewpassword;

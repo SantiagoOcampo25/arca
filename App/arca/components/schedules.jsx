@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import "../assets/css/components.scss";
 import "../assets/css/main.scss";
 import "../assets/css/gesHorarios.scss";
-import SchedulesInfoDoc from "./SchedulesInfoDoc";
-import SchedulesDate from "./SchedulesDate";
+import SchedulesInfoDoc from "./schedulesinfodoc";
+import Schedulesdate from "./schedulesdate";
 
 function Schedules() {
     return (
@@ -32,7 +32,7 @@ function Schedules() {
                         </span>
                         <hr />
                     </div>
-                    <SchedulesDate />
+                    <Schedulesdate />
                     <div className="con-btn-cm">
                         <button id="btn-cm" type="submit">Registrar</button>
                     </div>

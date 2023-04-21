@@ -6,7 +6,7 @@ import "../assets/css/helpCenter.scss";
 import "../assets/css/main.scss";
 import menuimg from "../assets/img/icons/menu-burger.svg";
 import arcalogo from "../assets/img/icons/logo.svg";
-import ItemsSidebar from "./ItemsSidebar";
+import Itemssidebar from "./itemssidebar";
 import dashboardimg from "../assets/img/icons/ico_apps-font_vio}.svg";
 import estetoscopioimg from "../assets/img/icons/ico_stethoscope.svg";
 import usersimg from "../assets/img/icons/users-alt-free-icon-font.svg";
@@ -53,44 +53,44 @@ function Sidebar(props) {
         <div className="menu" onClick={menu}>
           <img src={menuimg} alt="Menu" />
         </div>
-        <a className={arcaImg} href="#">
+        <Link className={arcaImg} to="" >
           <img src={arcalogo} alt="Arca logo" id="arca-logo" />
-        </a>
+        </Link>
       </div>
       <div className={`${bodyClassName} ${bodyClassNameMenu}`}>
         <div className="con-item">
-          <ItemsSidebar
+          <Itemssidebar
             to="/Dashboard"
             imgSrc={dashboardimg}
             alt="Dashboard"
             name="Dashboard"
           />
-          <ItemsSidebar
+          <Itemssidebar
             to="/Dashboard/Schedules"
             imgSrc={estetoscopioimg}
             alt="Horarios"
             name="Horarios"
           />
-          <ItemsSidebar
+          <Itemssidebar
             to="/Dashboard/ManageUsers"
             imgSrc={usersimg}
             alt="Gestión de usuarios"
             name="Gestión de usuarios"
           />
-          <ItemsSidebar
-            to="/Dashboard/PqrsfTable"
+          <Itemssidebar
+            to="/Dashboard/Pqrsftable"
             imgSrc={documentimg}
             alt="PQRSF"
             name="PQRSF"
           />
-          <ItemsSidebar name="Ajustes" />
-          <ItemsSidebar
+          <Itemssidebar name="Ajustes" />
+          <Itemssidebar
             to="/Dashboard/Profile"
             imgSrc={userprofile}
             alt="Perfil de usuario"
             name="Perfil de usuario"
           />
-          <ItemsSidebar name="Seguridad" />
+          <Itemssidebar name="Seguridad" />
         </div>
         <div className="con-foo-sidebar">
           <div className={conHelp}>

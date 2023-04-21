@@ -4,7 +4,7 @@ import "../assets/css/login.scss";
 import "../assets/css/main.scss";
 import "../assets/css/formfloating.scss";
 import loginImg from "../assets/img/Img-login.png";
-import FormLogin from "./FormLogin";
+import Formlogin from "./formlogin";
 
 function Login(){
   return (
@@ -18,7 +18,7 @@ function Login(){
               <p>¿No tienes cuenta?</p> <Link to="/Register">Registrate</Link>
             </div>
           </div>
-          <FormLogin />
+          <Formlogin />
         </div>
         <div className="sect-img">
           <img src={loginImg} alt="" />

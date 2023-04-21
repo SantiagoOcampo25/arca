@@ -3,7 +3,7 @@ import "../assets/css/components.scss";
 import "../assets/css/main.scss";
 import "../assets/css/gesHorarios.scss";
 
-function SchedulesDate() {
+function Schedulesdate() {
     return (
         <div className="con-hora-agendamiento">
             <div className="semana-agendamiento">
@@ -32,4 +32,4 @@ function SchedulesDate() {
     );
 }
 
-export default SchedulesDate;
+export default Schedulesdate;

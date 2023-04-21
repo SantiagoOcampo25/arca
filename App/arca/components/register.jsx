@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../assets/css/register.scss";
 import "../assets/css/main.scss";
-import FormRegister from "./FormRegister";
+import FormRegister from "./formregister";
 
 function Register() {
   return (

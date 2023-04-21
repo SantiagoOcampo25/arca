@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/css/main.scss";
 import "../assets/css/pqrs.scss";
 
-function FormPQRSF() {
+function Formpqrsf() {
     return (
         <div className="body-form-ba">
             <div className="form-floating">
@@ -57,4 +57,4 @@ function FormPQRSF() {
     );
 }
 
-export default FormPQRSF;
+export default Formpqrsf;

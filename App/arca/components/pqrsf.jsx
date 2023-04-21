@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import "../assets/css/main.scss";
 import "../assets/css/pqrs.scss";
 import "../assets/css/formfloating.scss";
-import FormPQRSF from "./FormPQRSF";
-import DetailPQRSF from "./DetailPQRSF";
+import Formpqrsf from "./formpqrsf";
+import Detailpqrsf from "./detailpqrsf";
 
 function Pqrsf() {
   return (
@@ -20,9 +20,9 @@ function Pqrsf() {
               <h4>Información del afectado</h4>
               <hr />
             </div>
-            <FormPQRSF />
+            <Formpqrsf />
           </section>
-          <DetailPQRSF />
+          <Detailpqrsf />
           <section className="btn-foo-form">
             <Link to="/">Volver</Link>
             <button type="submit">Enviar</button>

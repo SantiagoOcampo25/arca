@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import Sidebar from "./Sidebar";
-import Navbar from "./Navbar";
-import Dashboard from "./dashboard";
-import ManageUsers from "./ManageUsers";
-import Schedules from "./Schedules";
-import PqrsfTable from "./PqrsfTable";
-import Profile from "./Profile";
-
+import Sidebar from "../components/sidebar";
+import Navbar from "../components/navbar";
+import Dashboard from "../components/dashboard";
+import ManageUsers from "../components/ManageUsers";
+import Schedules from "../components/schedules";
+import Pqrsftable from "../components/pqrsftable";
+import Profile from "../components/profile";
 
 const datosPQRSF = [
     {
@@ -25,8 +24,7 @@ const datosPQRSF = [
         TipoPQRSF: 'Reclamo',
         Documento: 'CC 1029812239'
     }
-];
-
+]
 const ShowDashboardPQRSF = [
     {
         NumRadicacion: '1',
@@ -60,7 +58,7 @@ function Router() {
                     <Route path="/" element={<Dashboard ShowDashboardPQRSF={ShowDashboardPQRSF}/>} />
                     <Route path="/ManageUsers" element={<ManageUsers />} />
                     <Route path="/Schedules" element={<Schedules />} />
-                    <Route path="/PqrsfTable" element={<PqrsfTable datosPQRSF={datosPQRSF} />} />
+                    <Route path="/Pqrsftable" element={<Pqrsftable datosPQRSF={datosPQRSF} />} />
                     <Route path="/Profile" element={<Profile />} />
                 </Routes>
             </div>
