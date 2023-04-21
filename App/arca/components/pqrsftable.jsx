@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../assets/css/components.scss";
 import "../assets/css/main.scss";
-import Sidebar from "./sidebar";
-import Navbar from "./navbar";
 
 function PqrsfTableRow({ datos }) {
     const [estadopqrsf, setEstadopqrsf] = useState(false);
@@ -11,7 +9,6 @@ function PqrsfTableRow({ datos }) {
     const click = () => {
         setEstadopqrsf(!estadopqrsf);
     };
-
     return (
         <tr className="row-secondary">
             <td className="th-first">{datos.idUser}</td>
@@ -27,12 +24,13 @@ function PqrsfTableRow({ datos }) {
     );
 }
 
-function Pqrsftable({ datosPQRSF }) {
+function PqrsfTable({ datosPQRSF }) {
+    const [estadoSidebar, setEstadoSidebar] = useState(false);
+    const containerClassNameS = estadoSidebar ? containerClass : "container-dashboard";
+    function click() {
+        setEstadoSidebar(!estadoSidebar);
+    };
     return (
-        <div className="container-dashboard" style={{ transition: "all 3s" }}>
-            <Sidebar />
-            <Navbar />
-            <div className="body-contenido">
                 <div className="con-table">
                     <div className="info-table">
                         <div className="section-1">
@@ -41,7 +39,7 @@ function Pqrsftable({ datosPQRSF }) {
                         <div className="section-2">
                             <Link to="/Dashboard">
                                 Volver
-                                <img src="./assets/img/icons/flecha-pequena-derecha 1.svg" alt="" />
+                                <img src="../assets/img/icons/flecha-pequena-derecha 1.svg" alt="" />
                             </Link>
                         </div>
                     </div>
@@ -64,9 +62,7 @@ function Pqrsftable({ datosPQRSF }) {
                         </table>
                     </div>
                 </div>
-            </div>
-        </div>
     );
 }
 
-export default Pqrsftable;
+export default PqrsfTable;

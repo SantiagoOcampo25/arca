@@ -30,7 +30,7 @@
 
 .con-form{
     grid-column: 1/2;
-    background: #FBFCFC;
+    background-color: $second-color-background;
     border-radius: 20px;
 
 }
@@ -45,7 +45,7 @@
 }
 
 .FormUsers{
-    background: #FBFCFC;
+    background-color: #ffffff !important;
     border-radius: 20px;
     display: grid;
     justify-content: center;

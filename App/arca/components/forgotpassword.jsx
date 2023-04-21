@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import imagen from "../assets/img/Imagen.png";
 import sobreinput from "../assets/img/icons/sobre 1.svg";
 import "../assets/css/main.scss";
-import "../assets/css/formfloating1.scss";
+import "../assets/css/formfloating.scss";
 import "../assets/css/recoveryPass.scss";
 import "../assets/css/button.scss";
+import "../assets/css/titles.scss";
 
-function Forgotpassword(){
+function ForgotPassword(){
   return (
   <div className="con-recovery-password">
 		    <div className="con-img-pass">
@@ -42,4 +43,4 @@ function Forgotpassword(){
   );
 }
 
-export default Forgotpassword;
+export default ForgotPassword;

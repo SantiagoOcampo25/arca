@@ -1,11 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom"; 
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import "../assets/css/main.scss";
 import "../assets/css/pqrs.scss";
 
-function Detailpqrsf(){
+function DetailPQRSF(){
     return(
         <section className="detail-so">
             <div className="head-form">
@@ -36,7 +33,7 @@ function Detailpqrsf(){
                     <label htmlFor="floatingTextarea">Detalle del PQRSF</label>
                   </div>
                   <div className="con-file">
-                      <input type="file" accept=".pdf" id="file" className="btn btn-primary" name="file" onChange={event => { fileValidation(); selectFilePqrsf(); }} />
+                      <input type="file" accept=".pdf" id="file" className="btn btn-primary" name="file" />
 
                       <label htmlFor="file" className="label-file">
                         <div className="btn-adj"><p>Adjuntar soporte***</p></div>
@@ -54,4 +51,4 @@ function Detailpqrsf(){
     );
 }
 
-export default Detailpqrsf;
+export default DetailPQRSF;

@@ -1,7 +1,7 @@
 @import 'main.scss';
 
 body{
-    background: #FBFCFC;
+    background: $second-color-background;
 }
 .con-img-pass img{
     height: 100vh;
@@ -31,29 +31,7 @@ body{
     justify-content: end;
 
 }
-.head-1 h2{
-    font-family: $font-poppins;
-    font-size: 65px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 10px;
-    text-align: end;
-}
-.head-1 span{
-    color: $main-color;
-}
 
-.head-2 h3{
-    text-align: end;
-    font-family: $font-nunito;
-    font-style: normal;
-    font-size: 32px;
-    color: #17202A;
-}
-.head-2 h3{
-    text-decoration: none;
-    font-weight: 600;
-}
 .con-buttons{
     display: grid;
     grid-template-rows: 0%;

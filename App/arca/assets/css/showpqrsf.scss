@@ -1,7 +1,7 @@
 @import 'main.scss';
 
 .con-show{
-    background-color: #FBFCFC;
+    background-color: $second-color-background;
     border-radius: 30px;
     margin-bottom: 50px;
     display: grid;
@@ -202,7 +202,7 @@
 }
 .show-act:nth-child(2){
     background-color: $main-color;
-    color: #FBFCFC;
+    color: $second-color-background;
     font-weight: bolder;
     font-family: $font-poppins;
 }

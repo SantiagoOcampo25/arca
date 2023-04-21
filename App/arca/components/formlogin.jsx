@@ -5,10 +5,10 @@ import "../assets/css/main.scss";
 import desplegable from "../assets/img/icons/desplegable.svg";
 import insignia from "../assets/img/icons/id-insignia 1.svg";
 
-function Formlogin(){
+function FormLogin(){
     return (
         <div className="body-login">
-            <form action="./data_validar_iniciosesion.php" method="post">
+            <form onSubmit={''} method="post">
               <div className="con-form-lo">
                 <div className="form-floating">
                   <select className="form-select" id="floatingSelect" aria-label="Floating label select example" name="tdd" required>
@@ -40,4 +40,4 @@ function Formlogin(){
           </div>
     );
 }
-export default Formlogin;
+export default FormLogin;

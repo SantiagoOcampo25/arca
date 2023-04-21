@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import imagen from "../assets/img/Imagen.png";
 import "../assets/css/main.scss";
 import "../assets/css/enterPin.scss";
+import "../assets/css/titles.scss";
 
-function Enternewpassword(){
+function EnterNewPassword(){
   return (
     <div className="con-recovery-password">
 		<div className="con-img-pass">
@@ -43,4 +44,4 @@ function Enternewpassword(){
   );
 }
 
-export default Enternewpassword;
+export default EnterNewPassword;

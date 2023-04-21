@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../assets/css/index.scss'
 import '../assets/css/main.scss'
 
@@ -30,13 +31,9 @@ function Footer(){
             <span className="head-foo">Accesos Rápidos</span>
             <hr />
             <span className="body-foo">
-              <a href="">Inicio</a>
+              <Link to="">Inicio</Link>
               <br />
-              <a href="">Sobre Nosotros</a>
-              <br />
-              <a href="">Servicios</a>
-              <br />
-              <a href="">Contacto</a>
+              <Link to="">Sobre Nosotros</Link>
               <br />
             </span>
           </section>
@@ -44,13 +41,13 @@ function Footer(){
             <span className="head-foo">Social</span>
             <hr />
             <span className="body-foo">
-              <a href="http://facebook.com/fundacionarcangeles/" target="_blank">
+              <Link to="http://facebook.com/fundacionarcangeles/" target="_blank">
                 Facebook
-              </a>
+              </Link>
               <br />
-              <a href="https://twitter.com/FundArcangeles" target="_blank">
+              <Link to="https://twitter.com/FundArcangeles" target="_blank">
                 Twitter
-              </a>
+              </Link>
             </span>
           </section>
           <span className="foo">Todos los derechos reservados © 2022</span>

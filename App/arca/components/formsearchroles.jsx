@@ -3,16 +3,16 @@ import "../assets/css/components.scss";
 import "../assets/css/main.scss";
 import "../assets/css/gesUsers.scss";
 
-function Fromsearchroles(){
+function FormSearchRoles(){
     return(
         <div className="con-form">
-                    <form action="neg_dat_pres_U_index.php" method="get" className="FormUsers">
+                    <form onSubmit={''} method="get" className="FormUsers">
                         <div className="headform">
                             <div className="titleform">
                                 <h3>Buscar por roles.</h3>
                             </div>
                             <div className="icon-form">
-                                <img src="./assets/img/icons/busqueda.svg" alt="" />
+                                <img src="../assets/img/icons/busqueda.svg" alt="" />
                             </div>
                         </div>
                         <div className="bodyform">
@@ -37,4 +37,4 @@ function Fromsearchroles(){
     );
 }
 
-export default Fromsearchroles;
+export default FormSearchRoles;

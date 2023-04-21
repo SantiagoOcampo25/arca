@@ -3,16 +3,16 @@ import "../assets/css/components.scss";
 import "../assets/css/main.scss";
 import "../assets/css/gesUsers.scss";
 
-function Fromnewuser(){
+function FormNewUser(){
     return(
         <div className="conform-new">
-                    <form action="" method="post" className="FormUsers">
+                    <form onSubmit={''} method="post" className="FormUsers">
                         <div className="headform">
                             <div className="titleform">
                                 <h3>Agregar Usuario</h3>
                             </div>
                             <div className="icon-form">
-                                <img src="./assets/img/icons/agregar-usuario 1.svg" alt="" />
+                                <img src="../assets/img/icons/agregar-usuario 1.svg" alt="" />
                             </div>
                         </div>
                         <div className="bodyform">
@@ -84,4 +84,4 @@ function Fromnewuser(){
     );
 }
 
-export default Fromnewuser;
+export default FormNewUser;

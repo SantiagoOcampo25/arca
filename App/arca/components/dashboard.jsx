@@ -1,33 +1,37 @@
-import React from "react";
-import { Link } from "react-router-dom"; 
+import React, { useState } from "react";
 import "../assets/css/components.scss";
 import "../assets/css/main.scss";
 import "../assets/css/dashboardAdministrador.scss";
-import Sidebar from "./sidebar";
-import Navbar from "./navbar";
-import Formschedules from "./formschedulesdashboard";
-import Formusersdashboard from "./formusersdashboard";
+import FormSchedulesDashboard from "./FormSchedulesDashboard";
+import FormUsersDashboard from "./FormUsersDashboard";
+import ShowPQRSF from "./ShowPQRSF";
 
-function Dashboard(){
-  return (
-    <div className="container-dashboard" style={{transition: "all 3s"}}>
-                <Sidebar />
-                <Navbar />
-        <div className="body-contenido">
-            <div className="con-dashboard-admin">
-                <div className="con-horarios-admin">
-                    <Formschedules />
-                    <Formusersdashboard />
-                </div>
-                <div className="con-pqrsf">
-                    <div className="title-pqrsf">PQRSF recientes</div>
-                        <div className="body-spqrsf">
-                            <div className="img-spqrsf"><img src='../assets/img/sin_citas.svg' alt='' /></div>
-                            <div className="text-spqrsf">No tienes pqrsf sin responder</div>
-                    </div>
-                </div>
-            </div>
+function Dashboard(props) {
+  const [showpqrsf, setshowpqrsf] = useState(true);
+  let pqrsfContent;
+
+  if (showpqrsf) {
+    pqrsfContent = <ShowPQRSF ShowDashboardPQRSF={props.ShowDashboardPQRSF} />;
+  } else {
+    pqrsfContent = (
+      <>
+        <div className="img-spqrsf">
+          <img src="../assets/img/sin_citas.svg" alt="" />
         </div>
+        <div className="text-spqrsf">No tienes pqrsf sin responder</div>
+      </>
+    );
+  }
+  return (
+    <div className="con-dashboard-admin">
+      <div className="con-horarios-admin">
+        <FormSchedulesDashboard />
+        <FormUsersDashboard />
+      </div>
+      <div className="con-pqrsf">
+        <div className="title-pqrsf">PQRSF recientes</div>
+        <div className="body-pqrsf">{pqrsfContent}</div>
+      </div>
     </div>
   );
 }

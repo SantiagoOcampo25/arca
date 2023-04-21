@@ -1,7 +1,7 @@
 @import 'main.scss';
 
 body{
-    background: #FBFCFC;
+    background: $second-color-background;
 }
 .con-form-pqrs{
     padding-top: 45px;
@@ -65,7 +65,7 @@ input[type="file"]{
     display: none;
 }
 .con-file{
-    background: #FBFCFC;
+    background: $second-color-background;
     height: 60px;
     min-width: 255px;
     border-radius: 10px;
@@ -140,7 +140,7 @@ input[type="file"]{
     font-weight: bold;
 }
 .btn-foo-form a{
-    background: #FBFCFC;
+    background: $second-color-background;
     color: rgba(23, 32, 42, 0.5);
     text-decoration: none;
     display: flex;
@@ -150,7 +150,7 @@ input[type="file"]{
 }
 .btn-foo-form button{
     background: $main-color;
-    color: #FBFCFC;
+    color: $second-color-background;
     border: none;
     border-radius: 20px;
     font-weight: bold;
@@ -167,7 +167,7 @@ input[type="file"]{
     margin-top: -20px;
 }
 .modal-content{
-    background: #FBFCFC;
+    background: $second-color-background;
     border-radius: 10px;
 }
 .con-alert-modal{

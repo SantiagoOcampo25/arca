@@ -1,7 +1,7 @@
 @import 'main.scss';
 
 body{
-    background: #FBFCFC;
+    background: $second-color-background;
 }
 .con-img-register{
     display: none;
@@ -22,25 +22,12 @@ body{
     grid-template-columns: 50%;
     justify-content: end;
 }
-.head-1 h2{
+.head h2{
     font-family: $font-poppins;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
     margin-top: 10px;
-}
-.head-2 p{
-    text-align: center;
-    font-family: $font-nunito;
-    font-size: 20px;
-    padding: 0px;
-    margin: 0px;
-    margin-top: 20px;
-}
-.head-2 p a{
-    color: $main-color;
-    text-decoration: none;
-    font-weight: 600;
 }
 
 .ico-input{
@@ -149,7 +136,7 @@ body{
         justify-content: center;
         grid-template-columns: 100%;
     }
-    .head-1 h2 {
+    .head h2 {
         font-size: 30px;
       }
       .head-2 p {
