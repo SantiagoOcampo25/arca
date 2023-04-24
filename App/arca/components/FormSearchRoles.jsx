@@ -3,7 +3,7 @@ import "../assets/css/components.scss";
 import "../assets/css/main.scss";
 import "../assets/css/gesUsers.scss";
 
-function Fromsearchroles(){
+function FormSearchRoles(){
     return(
         <div className="con-form">
                     <form onSubmit={''} method="get" className="FormUsers">
@@ -37,4 +37,4 @@ function Fromsearchroles(){
     );
 }
 
-export default Fromsearchroles;
+export default FormSearchRoles;

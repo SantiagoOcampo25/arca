@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Itemssidebar(props) {
+function ItemsSidebar(props) {
   const { to, imgSrc, alt, name } = props;
   return (
     <>
@@ -23,5 +23,5 @@ function Itemssidebar(props) {
     </>
   );
 }
-export default Itemssidebar;
+export default ItemsSidebar;
 

@@ -5,7 +5,7 @@ import "../assets/css/main.scss";
 import desplegable from "../assets/img/icons/desplegable.svg";
 import insignia from "../assets/img/icons/id-insignia 1.svg";
 
-function Formlogin(){
+function FormLogin(){
     return (
         <div className="body-login">
             <form onSubmit={''} method="post">
@@ -40,4 +40,4 @@ function Formlogin(){
           </div>
     );
 }
-export default Formlogin;
+export default FormLogin;

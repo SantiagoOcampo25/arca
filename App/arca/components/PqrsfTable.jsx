@@ -24,7 +24,7 @@ function PqrsfTableRow({ datos }) {
     );
 }
 
-function Pqrsftable({ datosPQRSF }) {
+function PqrsfTable({ datosPQRSF }) {
     const [estadoSidebar, setEstadoSidebar] = useState(false);
     const containerClassNameS = estadoSidebar ? containerClass : "container-dashboard";
     function click() {
@@ -65,4 +65,4 @@ function Pqrsftable({ datosPQRSF }) {
     );
 }
 
-export default Pqrsftable;
+export default PqrsfTable;

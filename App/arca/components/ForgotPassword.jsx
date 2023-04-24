@@ -8,7 +8,7 @@ import "../assets/css/recoveryPass.scss";
 import "../assets/css/button.scss";
 import "../assets/css/titles.scss";
 
-function Forgotpassword(){
+function ForgotPassword(){
   return (
   <div className="con-recovery-password">
 		    <div className="con-img-pass">
@@ -43,4 +43,4 @@ function Forgotpassword(){
   );
 }
 
-export default Forgotpassword;
+export default ForgotPassword;

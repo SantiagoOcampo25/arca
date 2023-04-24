@@ -1,7 +1,7 @@
 import React from "react";
-import Banner from '../components/bannerIndex.jsx';
-import AboutUs from '../components/aboutusIndex.jsx';
-import Footer from '../components/footerIndex.jsx';
+import Banner from '../components/BannerIndex.jsx';
+import AboutUs from './AboutUsIndex.jsx';
+import Footer from '../components/FooterIndex.jsx';
 
 function Index(){
   return (

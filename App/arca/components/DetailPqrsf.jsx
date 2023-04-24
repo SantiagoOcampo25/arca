@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/css/main.scss";
 import "../assets/css/pqrs.scss";
 
-function Detailpqrsf(){
+function DetailPQRSF(){
     return(
         <section className="detail-so">
             <div className="head-form">
@@ -51,4 +51,4 @@ function Detailpqrsf(){
     );
 }
 
-export default Detailpqrsf;
+export default DetailPQRSF;

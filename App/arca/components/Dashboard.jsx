@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import "../assets/css/components.scss";
 import "../assets/css/main.scss";
 import "../assets/css/dashboardAdministrador.scss";
-import FormSchedulesDashboard from "./FormSchedulesDashboard";
+import FormSchedules from "./FormSchedulesDashboard";
 import FormUsersDashboard from "./FormUsersDashboard";
 import ShowPQRSF from "./ShowPQRSF";
 
-function Dashboard(props) {
+function Dashboard() {
   const [showpqrsf, setshowpqrsf] = useState(true);
   let pqrsfContent;
 
   if (showpqrsf) {
-    pqrsfContent = <ShowPQRSF ShowDashboardPQRSF={props.ShowDashboardPQRSF} />;
+    pqrsfContent = <ShowPQRSF />;
   } else {
     pqrsfContent = (
       <>
@@ -25,7 +25,7 @@ function Dashboard(props) {
   return (
     <div className="con-dashboard-admin">
       <div className="con-horarios-admin">
-        <FormSchedulesDashboard />
+        <FormSchedules />
         <FormUsersDashboard />
       </div>
       <div className="con-pqrsf">

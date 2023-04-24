@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../assets/css/bootstrap.scss";
 import "../assets/css/main.scss";
 import "../assets/css/pqrs.scss";
 import "../assets/css/formfloating.scss";
-import Formpqrsf from "./formpqrsf";
-import Detailpqrsf from "./detailpqrsf";
+import FormPQRSF from "./FormPqrsf";
+import DetailPQRSF from "./DetailPqrsf";
 
 function Pqrsf() {
   return (
@@ -20,9 +21,9 @@ function Pqrsf() {
               <h4>Información del afectado</h4>
               <hr />
             </div>
-            <Formpqrsf />
+            <FormPQRSF />
           </section>
-          <Detailpqrsf />
+          <DetailPQRSF />
           <section className="btn-foo-form">
             <Link to="/">Volver</Link>
             <button type="submit">Enviar</button>

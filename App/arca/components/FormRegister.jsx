@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/css/register.scss";
 import "../assets/css/main.scss";
 

@@ -3,7 +3,7 @@ import "../assets/css/components.scss";
 import "../assets/css/main.scss";
 import "../assets/css/gesUsers.scss";
 
-function Fromnewuser(){
+function FormNewUser(){
     return(
         <div className="conform-new">
                     <form onSubmit={''} method="post" className="FormUsers">
@@ -84,4 +84,4 @@ function Fromnewuser(){
     );
 }
 
-export default Fromnewuser;
+export default FormNewUser;

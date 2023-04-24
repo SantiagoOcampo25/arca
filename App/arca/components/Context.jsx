@@ -1,6 +1,6 @@
-import React, { useState, createContext } from "react";
+import React, { createContext } from "react";
 
-const Context = createContext();
+const ShowDashboardPQRSFContext = createContext();
 
 const ShowDashboardPQRSFContextProvider = (props) => {
   const ShowDashboardPQRSF = [
@@ -20,13 +20,14 @@ const ShowDashboardPQRSFContextProvider = (props) => {
       Fecha: '2021-09-20'
     }
   ];
-  
+
   return (
-    <Context.Provider value={ShowDashboardPQRSF}>
+    <ShowDashboardPQRSFContext.Provider value={ShowDashboardPQRSF}>
       {props.children}
-    </Context.Provider>
+    </ShowDashboardPQRSFContext.Provider>
   );
 };
 
-export { Context, ShowDashboardPQRSFContextProvider };
+export { ShowDashboardPQRSFContext, ShowDashboardPQRSFContextProvider };
+
 

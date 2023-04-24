@@ -3,7 +3,7 @@ import { useState } from 'react';
 import "../assets/css/components.scss";
 import "../assets/css/main.scss";
 import "../assets/css/helpCenter.scss";
-import HelpCenterBody from "./helpcenterbody";
+import HelpCenterBody from "./HelpCenterBody";
 
 function HelpCenter() {
   const [itemSelected, setItemSelected] = useState(false);
@@ -79,7 +79,7 @@ function HelpCenter() {
       <div className="footer-help-center">
         <h4>¿Aun necesitas ayuda?</h4>
         <p>Envia un mensajes via email.</p>
-        <Link to="" >Contactanos</Link>
+        <a href>Contactanos</a>
       </div>
     </div>
   );

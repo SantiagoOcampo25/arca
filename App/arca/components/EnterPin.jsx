@@ -7,7 +7,7 @@ import "../assets/css/enterPin.scss";
 import "../assets/css/formfloating.scss";
 import "../assets/css/titles.scss";
 
-function Enterpin() {
+function EnterPin() {
     return (
         <div className="con-recovery-password">
             <div className="con-img-pass">
@@ -42,4 +42,4 @@ function Enterpin() {
     );
 }
 
-export default Enterpin;
+export default EnterPin;

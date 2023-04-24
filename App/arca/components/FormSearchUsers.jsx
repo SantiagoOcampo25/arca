@@ -3,7 +3,7 @@ import "../assets/css/components.scss";
 import "../assets/css/main.scss";
 import "../assets/css/gesUsers.scss";
 
-function Fromsearchusers() {
+function FormSearchUsers() {
     return (
         <div className="con-form">
             <form onSubmit={''} method="get" className="FormUsers">
@@ -41,4 +41,4 @@ function Fromsearchusers() {
     );
 }
 
-export default Fromsearchusers;
+export default FormSearchUsers;

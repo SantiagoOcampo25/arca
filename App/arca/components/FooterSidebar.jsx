@@ -5,7 +5,7 @@ import "../assets/css/helpCenter.scss";
 import "../assets/css/main.scss";
 import help from "../assets/img/icons/help.svg";
 
-function Footersidebar(){
+function FooterSidebar(){
     return(
         <div className="con-foo-sidebar">
         <div className="con-help-center">
@@ -20,4 +20,4 @@ function Footersidebar(){
     );
 }
 
-export default Footersidebar;
+export default FooterSidebar;
