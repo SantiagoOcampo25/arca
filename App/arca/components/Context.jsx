@@ -1,9 +1,9 @@
-import React, { createContext } from "react";
+import React, { useContext } from "react";
 
-const ShowDashboardPQRSFContext = createContext();
+const ShowDashboardPQRSFContext = useContext();
 
 const ShowDashboardPQRSFContextProvider = (props) => {
-  const ShowDashboardPQRSF = [
+ const ShowDashboardPQRSF = [
     {
       NumRadicacion: '1',
       TipoPQRSF: 'Felicitacion',
