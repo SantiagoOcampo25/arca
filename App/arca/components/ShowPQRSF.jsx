@@ -1,22 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import { Link } from "react-router-dom";
 import "../assets/css/components.scss";
 import "../assets/css/main.scss";
 import "../assets/css/dashboardAdministrador.scss";
+import { GetPqrsfList } from '../api/GetPqrsfList';
 
 function PQRSF() {
   const [pqrsfList, setPqrsfList] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost/api/pres_neg_dat_admin_pqrsf_show_.php")
-      .then(response => {
-        setPqrsfList(response.data);
-      })
-      .catch(error => {
+    const GetData = async () => {
+      try {
+        const response = await GetPqrsfList();
+        setPqrsfList(response);
+      } catch(error) {
         console.log(error);
-      });
+      }
+    };
+
+    GetData();
   }, []);
+
 
   return (
     <div>
@@ -53,6 +57,7 @@ function PQRSF() {
           </div>
           <div className="text-spqrsf">No hay PQRSF sin responder</div>
         </div>
+        
       )}
     </div>
   );

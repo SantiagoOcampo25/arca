@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
-import axios from "axios";
+import { LoginUser } from "../api/LoginUser";
 import { Link } from "react-router-dom";
 import "../assets/css/login.scss";
 import "../assets/css/main.scss";
@@ -27,22 +27,14 @@ function FormLogin() {
     }));
   }
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    axios.post("http://localhost/api/data.php", formData, {
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-    })
-      .then((response) => {
-        if (response) {
-          navigate("/Dashboard");
-          console.log(response);        
-        }
-      })
-      .catch((error) => {
-         console.log(error);
-      });
+    try {
+      await LoginUser(formData);
+      navigate('/Dashboard');
+    } catch(error) {
+      console.log(error);
+    }
   };
   return (
     <div className="body-login">
