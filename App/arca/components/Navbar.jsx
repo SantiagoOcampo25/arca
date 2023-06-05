@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom"; 
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/components.scss";
 import "../assets/css/main.scss";
 

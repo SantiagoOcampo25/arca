@@ -1,34 +1,29 @@
 import { Routes, Route } from "react-router-dom";
-import Index from "../components/index";
-import Login from "../components/login";
-import Forgotpassword from "../components/forgotpassword";
-import Enterpin from "../components/enterpin";
-import Enternewpassword from "../components/enternewpassword";
-import Sidebar from "../components/sidebar";
-import Navbar from "../components/navbar";
-import Dashboard from "../components/dashboard";
-import HelpCenter from "../components/helpcenter";
-import Pqrsf from "../components/pqrsf";
-import ManageUsers from "../components/manageUsers";
+import Router from "../components/router";
+import Login from "../components/Login";
+import ForgotPassword from "../components/ForgotPassword";
+import EnterPin from "../components/EnterPin";
+import EnterNewPassword from "../components/EnterNewPassword";
+import Register from "../components/Register";
+import Index from "../components/Index";
+import Pqrsf from "../components/Pqrsf";
+import { ShowDashboardPQRSFContextProvider } from "../components/Context";
 
-
-function App() {
-
-  return (
-    <Routes>
-      <Route path='/' element={<Index />} />
-      <Route path='/Login' element={<Login />} />
-      <Route path='/Forgotpassword' element={<Forgotpassword />} />
-      <Route path='/Enterpin' element={<Enterpin />} />
-      <Route path='/Enternewpassword' element={<Enternewpassword />} />
-      <Route path='/Sidebar' element={<Sidebar />} />
-      <Route path='/Navbar' element={<Navbar />} />
-      <Route path='/Dashboard' element={<Dashboard />} />
-      <Route path='/HelpCenter' element={<HelpCenter />} />
-      <Route path='/Pqrsf' element={<Pqrsf />} />
-      <Route path='/ManageUsers' element={<ManageUsers />} />
-    </Routes>
+function App() { 
+  return (  
+    <ShowDashboardPQRSFContextProvider>
+      <Routes>
+        <Route path='/' element={<Index />} />
+        <Route path='/Login' element={<Login />} />
+        <Route path='/ForgotPassword' element={<ForgotPassword />} />
+        <Route path='/EnterPin' element={<EnterPin />} />
+        <Route path='/EnterNewPassword' element={<EnterNewPassword />} />
+        <Route path='/Register' element={<Register />} />
+        <Route path='/Pqrsf' element={<Pqrsf />} />
+        <Route path='/Dashboard/*' element={<Router />} />
+      </Routes>
+    </ShowDashboardPQRSFContextProvider>
   )
-}  
+}
 
-export default App
+export default App;

@@ -71,7 +71,7 @@
     border-radius: 10px;
     display: flex;
     align-items: center;
-    background: #FBFCFC;
+    background: $second-color-background;
     padding-left: 30px;
     padding-right: 30px;
     font-weight: bold;
@@ -201,6 +201,7 @@ hr{
     border-radius: 10px; 
     height: 40px;
 }
+
 @media (min-width:1020px){
     .con-help-center-v{
         grid-template-columns: 320px calc(70% - 320px);

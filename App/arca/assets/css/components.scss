@@ -3,7 +3,7 @@
 /* Start sidebar */
 .head-sidebar{
     display: grid;
-    background: #FBFCFC;
+    background: $second-color-background;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
     position: -webkit-sticky;
@@ -19,6 +19,13 @@
 .arca img{
     height: 35px;
 }
+.arca-s{
+    align-self: center;
+    margin-left: 10px;
+}
+.arca-s img{
+    height: 15px;
+}
 .menu{
     display: grid;
     align-content: center;
@@ -30,7 +37,7 @@
 
 }
 .body-dashboard{
-    background: #FBFCFC;
+    background: $second-color-background;
     height: calc(100vh - 90px);
     position: -webkit-sticky;
     position: sticky;
@@ -128,6 +135,9 @@
     border-radius: 5px;
     cursor: pointer;
 }
+.btn-des-sidebar.btn-des-sidebar-s{
+    left: 55px;
+}
 .btn-des-sidebar img{
     width: 80%;
 }
@@ -145,7 +155,6 @@
 .con-help-center{
     background: rgb(50 40 108 / 0.4);
     display: grid;
-    display: grid;
     justify-content: center;
     grid-template-columns: 80%;
     position: relative;
@@ -153,6 +162,9 @@
     width: 75%;
     border-radius: 10px;
     margin-bottom: 15px;
+}
+.con-help-center.con-help-center-s{
+    display: none;
 }
 .head-help{
     position: absolute;
@@ -181,7 +193,7 @@
     margin-top: -10px;
 }
 .con-help-center a{
-    background: #FBFCFC;
+    background: $second-color-background;
     text-decoration: none;
     border-radius: 5px;
     height: 30px;
@@ -483,10 +495,23 @@ table.dataTable.display>tbody>tr.odd>.sorting_1, table.dataTable.order-column.st
         width: 260px;
 
     }
+    .body-dashboard.body-dashboard-s{
+        width: 70px;
+    }
+    .body-dashboard.body-dashboard-m{
+        left: 0px;
+    }
+    .hidden{
+        overflow-y: hidden;
+      }
     .con-sidebar-a{
         display: block;
         left: -6000px;
         right: auto;
+    }
+    .con-sidebar-a.con-sidebar-m{
+        left: auto;
+        right: 0px;
     }
     .con-help-center{
         display: none;

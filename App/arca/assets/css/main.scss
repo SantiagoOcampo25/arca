@@ -5,17 +5,24 @@ $font-poppins: 'Poppins', sans-serif;
 $font-nunito: 'Nunito', sans-serif;
 
 $main-color: #483D8B;
+$second-color-background: #FBFCFC;
 
 body {
   margin: 0;
   padding: 0;
-  background: #F4F6F7;
+  background: $second-color-background;
   box-sizing: border-box;
 }
 
-.container-dashboard {
+.container-dashboard{
   display: grid;
   grid-template-columns: 260px 1fr;
+  justify-content: space-between;
+  grid-template-rows: 90px 1fr;
+}
+.container-dashboard-s{
+  display: grid;
+  grid-template-columns: 70px 1fr;
   justify-content: space-between;
   grid-template-rows: 90px 1fr;
 }
@@ -68,6 +75,10 @@ body {
   #arca-logo {
     height: 35px !important;
     width: 85.5px !important;
+  }
+  #arca-logo-s{
+    height: 35px !important;
+    width: 30px !important;
   }
 
   .con-btn-help {

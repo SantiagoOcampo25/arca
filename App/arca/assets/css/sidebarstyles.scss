@@ -1,0 +1,25 @@
+.sidebar-anim {
+    transition: all 0.5s ease;
+  }
+  
+  .sidebar-anim .body-dashboard {
+    width: 260px;
+  }
+  
+  .sidebar-anim .btn-des-sidebar {
+    left: 245px;
+  }
+  
+  .sidebar-anim .img-btn {
+    transform: rotate(180deg);
+  }
+  
+  .sidebar-anim #arca-logo {
+    width: 85.5px;
+    height: 35px;
+  }
+  
+  .sidebar-anim .con-help-center {
+    display: grid;
+  }
+  

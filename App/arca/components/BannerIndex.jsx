@@ -8,18 +8,18 @@ function Banner() {
     <div className="con-banner">
       <header>
         <nav>
-          <a href="./index.html" className="item-menu">
-            <img src="./assets/img/Logos/Logo TEXT.svg" alt="" />
-          </a>
-          <a href="#Nosotros" className="item-menu">
+          <Link to="" className="item-menu">
+            <img src="../assets/img/Logos/Logo TEXT.svg" alt="" />
+          </Link>
+          <Link to="#Nosotros" className="item-menu">
             Nosotros
-          </a>
-          <a href="#Servicios" className="item-menu">
+          </Link>
+          <Link to="#Servicios" className="item-menu">
             Servicios
-          </a>
-          <a href="#Contacto" className="item-menu">
+          </Link>
+          <Link to="#Contacto" className="item-menu">
             Contacto
-          </a>
+          </Link>
           <Link to="/login" className="item-menu btn-menu">
             Ingresar
           </Link>
@@ -35,10 +35,10 @@ function Banner() {
           </p>
         </section>
         <section className="bottom-banner">
-          <a href="./pres_login.php">Reserva Cita</a>
-          <a href="#Contacto" className="con-ba">
+          <Link to="/login">Reserva Cita</Link>
+          <Link to="#Contacto" className="con-ba">
             Contactanos
-          </a>
+          </Link>
         </section>
       </div>
     </div>

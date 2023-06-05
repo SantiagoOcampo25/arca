@@ -1,0 +1,38 @@
+@import 'main.scss';
+
+.head-1 h2{
+    font-family: $font-poppins;
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    text-align: end;
+}
+.head-1 span{
+    color: $main-color;
+}
+
+.head-2 h3{
+    text-align: end;
+    font-family: $font-nunito;
+    font-style: normal;
+    font-size: 32px;
+    color: #17202A;
+}
+.head-2 h3{
+    text-decoration: none;
+    font-weight: 600;
+}
+.head-2 p{
+    text-align: center;
+    font-family: $font-nunito;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+}
+.head-2 p a{
+    color: $main-color;
+    text-decoration: none;
+    font-weight: 600;
+}

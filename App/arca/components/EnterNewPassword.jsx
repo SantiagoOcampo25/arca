@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom"; 
 import imagen from "../assets/img/Imagen.png";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/main.scss";
 import "../assets/css/enterPin.scss";
+import "../assets/css/titles.scss";
 
-function Enternewpassword(){
+function EnterNewPassword(){
   return (
     <div className="con-recovery-password">
 		<div className="con-img-pass">
@@ -31,10 +31,10 @@ function Enternewpassword(){
                     </div>
                     <div className="con-buttons">
 						<div className="con-btn-back">
-                            <Link to="/Login"><input id="btn-back" type="button" value="Volver"></input></Link>
+                            <Link to="/Login"><button id="btn-back" type="button">Volver</button></Link>
                 		</div>
 						<div className="con-btn-recovery">
-                    		<Link to="/Login"><input id="btn-recovery" type="submit" value="Actualizar"></input></Link>
+                    		<Link to="/Login"><button id="btn-recovery" type="submit" >Actualizar</button></Link>
                 		</div>
 					</div> 
 	            </form>
@@ -44,4 +44,4 @@ function Enternewpassword(){
   );
 }
 
-export default Enternewpassword;
+export default EnterNewPassword;
