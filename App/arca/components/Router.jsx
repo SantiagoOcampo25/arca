@@ -30,6 +30,7 @@ const datosPQRSF = [
 function Router() {
     const [estadoSidebar, setEstadoSidebar] = useState(false);
     const containerClassNameS = estadoSidebar ? "container-dashboard-s" : "container-dashboard";
+    
     function click() {
         setEstadoSidebar(!estadoSidebar);
     };

@@ -501,6 +501,9 @@ table.dataTable.display>tbody>tr.odd>.sorting_1, table.dataTable.order-column.st
     .body-dashboard.body-dashboard-m{
         left: 0px;
     }
+    .hidden{
+        overflow-y: hidden;
+      }
     .con-sidebar-a{
         display: block;
         left: -6000px;

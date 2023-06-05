@@ -30,7 +30,7 @@ function Banner() {
           <h1>Por un mundo inclusivo</h1>
           <p>
             Fomentamos la inclusión a partir de la obtención de condiciones
-            óptimas de salud Link través de programas de rehabilitación dirigidos
+            óptimas de salud a través de programas de rehabilitación dirigidos
             por un equipo especializado.
           </p>
         </section>
