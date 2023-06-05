@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router";
 import { LoginUser } from "../api/LoginUser";
+import { TokenContext } from './Context';
 import { Link } from "react-router-dom";
 import "../assets/css/login.scss";
 import "../assets/css/main.scss";
@@ -11,6 +12,7 @@ import insignia from "../assets/img/icons/id-insignia 1.svg";
 
 function FormLogin() {
   const navigate = useNavigate();
+  const { setToken } = useContext(TokenContext);
 
 
   const [formData, setFormData] = useState({
@@ -30,7 +32,9 @@ function FormLogin() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await LoginUser(formData);
+      const response = await LoginUser(formData);
+      const token = response.token;
+      setToken(token);
       navigate('/Dashboard');
     } catch(error) {
       console.log(error);

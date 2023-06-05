@@ -44,7 +44,7 @@ function PQRSF() {
                   <div className="text-date">Día</div>
                 </div>
               </div>
-              <Link className="footer-info-pqrsf" to="">
+              <Link className="footer-info-pqrsf" to="/Dashboard/PqrsfTable">
                 Ver más
               </Link>
             </div>
