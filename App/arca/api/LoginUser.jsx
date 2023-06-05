@@ -2,7 +2,7 @@ import axios from 'axios';
 import { Navigate } from 'react-router-dom';
 
 const apiInstance = axios.create({
-  URL: import.meta.env.VITE_REACT_APP_API_URL,
+  baseURL: import.meta.env.VITE_REACT_APP_API_URL,
   headers: {
     'Content-Type': 'application/x-www-form-urlencoded',
   },
@@ -23,11 +23,13 @@ apiInstance.interceptors.request.use(
 
 apiInstance.interceptors.response.use(
   (response) => {
+    console.log('Intercepted response:', response);
     return response.data;
   },
   (error) => {
     if (error.response && error.response.status === 401) {
       localStorage.removeItem('jwtToken');
+      console.log('Error:', error.response);
       <Navigate to="/Login" replace={true} />
     }
     return Promise.reject(error.response.data);
