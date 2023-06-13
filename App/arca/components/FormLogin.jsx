@@ -34,9 +34,12 @@ function FormLogin() {
     try {
       const response = await LoginUser(formData);
       const token = response.token;
+
       setToken(token);
+      localStorage.setItem('jwtToken', token);
       navigate('/Dashboard');
-    } catch(error) {
+
+    } catch (error) {
       console.log(error);
     }
   };

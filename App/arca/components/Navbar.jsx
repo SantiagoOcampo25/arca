@@ -1,19 +1,17 @@
-import React, { useContext } from "react";
-import { Link, useNavigate} from "react-router-dom"; 
+import React, { useContext, useRef } from "react";
+import { Link } from "react-router-dom";
 import "../assets/css/components.scss";
 import "../assets/css/main.scss";
 import { logoutUser } from "../api/Logout";
 import { TokenContext } from './Context';
 
 function Navbar() {
-  const { token,logout } = useContext(TokenContext);
-  const navigate = useNavigate();
+  const { token, logout } = useContext(TokenContext);
 
   const handleLogout = async () => {
     try {
       await logoutUser(token);
       logout();
-      navigate("/Login", { replace: true });
     } catch (error) {
       console.log(error);
     }

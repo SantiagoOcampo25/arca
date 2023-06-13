@@ -3,7 +3,7 @@ import React, { useState, createContext } from "react";
 export const TokenContext = createContext();
 
 export const TokenProvider = ({ children }) => {
-  const [token, setToken] = useState(null);
+  const [token, setToken] = useState(localStorage.getItem('jwtToken') || null);
 
   const logout = () => {
     setToken(null);
