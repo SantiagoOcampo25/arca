@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "../assets/css/components.scss";
 import "../assets/css/main.scss";
