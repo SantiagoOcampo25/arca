@@ -3,7 +3,7 @@ import React, { createContext } from "react";
 const ShowDashboardPQRSFContext = createContext();
 
 const ShowDashboardPQRSFContextProvider = (props) => {
-  const ShowDashboardPQRSF = [
+ const ShowDashboardPQRSF = [
     {
       NumRadicacion: '1',
       TipoPQRSF: 'Felicitacion',
@@ -21,6 +21,7 @@ const ShowDashboardPQRSFContextProvider = (props) => {
     }
   ];
 
+  
   return (
     <ShowDashboardPQRSFContext.Provider value={ShowDashboardPQRSF}>
       {props.children}

@@ -14,8 +14,6 @@ import documentimg from "../assets/img/icons/ico_document-signed.svg";
 import userprofile from "../assets/img/icons/ico_user-free-icon-font (1).svg";
 import help from "../assets/img/icons/help.svg";
 
-
-
 function Sidebar(props) {
   const [estadoSidebar, setEstadoSidebar] = useState(false);
   const [estadoMenu, setEstadoMenu] = useState(false);
@@ -83,7 +81,6 @@ function Sidebar(props) {
             alt="Perfil de usuario"
             name="Perfil de usuario"
           />
-          <ItemsSidebar name="Seguridad" />
         </div>
         <div className="con-foo-sidebar">
           <div className={conHelp}>
