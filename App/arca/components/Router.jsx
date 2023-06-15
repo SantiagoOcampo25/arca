@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import Sidebar from "./Sidebar";
-import Navbar from "./Navbar";
-import Dashboard from "./Dashboard";
-import ManageUsers from "./ManageUsers";
-import Schedules from "./Schedules";
-import PqrsfTable from "./PqrsfTable";
-import Profile from "./Profile";
+import Sidebar from "../components/Sidebar";
+import Navbar from "../components/Navbar";
+import Dashboard from "../components/Dashboard";
+import ManageUsers from "../components/ManageUsers";
+import Schedules from "../components/schedules";
+import PqrsfTable from "../components/PqrsfTable";
+import Profile from "../components/Profile";
 
 
 const datosPQRSF = [

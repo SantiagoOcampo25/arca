@@ -25,11 +25,6 @@ function PqrsfTableRow({ datos }) {
 }
 
 function PqrsfTable({ datosPQRSF }) {
-    const [estadoSidebar, setEstadoSidebar] = useState(false);
-    const containerClassNameS = estadoSidebar ? containerClass : "container-dashboard";
-    function click() {
-        setEstadoSidebar(!estadoSidebar);
-    };
     return (
                 <div className="con-table">
                     <div className="info-table">
