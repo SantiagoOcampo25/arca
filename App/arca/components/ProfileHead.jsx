@@ -1,28 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { GetHeadProfileData } from "../api/GetHeadProfileData";
+import React from "react";
+import { ProfileData } from "./Profile";
 import { Link } from "react-router-dom";
 import "../assets/css/components.scss";
 import "../assets/css/main.scss";
 import "../assets/css/editProfile.scss";
-
-export function ProfileData({ children }) {
-  const [profile, setProfile] = useState([]);
-
-  useEffect(() => {
-    const getDataProfile = async () => {
-      try {
-        const response = await GetHeadProfileData();
-        setProfile(response);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    getDataProfile();
-  }, []);
-
-  return children(profile);
-}
 
 function ProfileHead() {
   return (

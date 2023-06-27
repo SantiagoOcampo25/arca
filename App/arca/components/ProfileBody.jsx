@@ -1,5 +1,5 @@
 import React from "react";
-import { ProfileData } from "./ProfileHead";
+import { ProfileData } from "./Profile";
 import "../assets/css/components.scss";
 import "../assets/css/main.scss";
 import "../assets/css/editProfile.scss";
