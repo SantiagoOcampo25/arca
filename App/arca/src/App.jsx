@@ -8,11 +8,10 @@ import Register from "../components/Register";
 import Index from "../components/Index";
 import HelpCenter from "../components/HelpCenter";
 import Pqrsf from "../components/Pqrsf";
-import { ShowDashboardPQRSFContextProvider } from "../components/Context";
+import PrivateRoute from "../components/PrivateRoutes";
 
 function App() { 
   return (  
-    <ShowDashboardPQRSFContextProvider>
       <Routes>
         <Route path='/' element={<Index />} />
         <Route path='/Login' element={<Login />} />
@@ -22,9 +21,12 @@ function App() {
         <Route path='/Register' element={<Register />} />
         <Route path='/HelpCenter' element={<HelpCenter />} />
         <Route path='/Pqrsf' element={<Pqrsf />} />
-        <Route path='/Dashboard/*' element={<Router />} />
+        <Route path='/Dashboard/*' element={
+        <PrivateRoute>
+          <Router />
+        </PrivateRoute>
+        } />
       </Routes>
-    </ShowDashboardPQRSFContextProvider>
   )
 }
 

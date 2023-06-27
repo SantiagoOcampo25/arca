@@ -1,13 +1,21 @@
-import React from "react";
-import { Link } from "react-router-dom"; 
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import "../assets/css/components.scss";
 import "../assets/css/main.scss";
+import { logoutUser } from "../api/Logout";
+import { TokenContext } from './Context';
 
 function Navbar() {
-  const handleLogout = () => {
-    localStorage.clear();
-    window.location.replace('/');
-  }
+  const { token, logout } = useContext(TokenContext);
+
+  const handleLogout = async () => {
+    try {
+      await logoutUser(token);
+      logout();
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <div className="navbar-dash">
@@ -27,3 +35,5 @@ function Navbar() {
 }
 
 export default Navbar;
+
+

@@ -1,15 +1,11 @@
-import axios from 'axios';
+import apiInstanceLogin from "../api/apiInterceptors/interceptorsAxiosLogin";
 
 export const LoginUser = async (formData) => {
-      return axios.post(`${import.meta.env.VITE_REACT_APP_API_URL}/data.php`, formData, {
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-      })
-        .then((response) => {
-          response.data
-        })
-        .catch((error) => {
-          throw error.response.data;
-        });
+  return apiInstanceLogin.post('/data.php', formData)
+    .then((response) => {
+      return response;
+    })
+    .catch((error) => {
+      throw error;
+    });
 };
