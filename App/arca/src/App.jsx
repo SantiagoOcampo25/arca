@@ -6,7 +6,6 @@ import EnterPin from "../components/EnterPin";
 import EnterNewPassword from "../components/EnterNewPassword";
 import Register from "../components/Register";
 import Index from "../components/Index";
-import HelpCenter from "../components/HelpCenter";
 import Pqrsf from "../components/Pqrsf";
 import PrivateRoute from "../components/PrivateRoutes";
 
@@ -19,7 +18,6 @@ function App() {
         <Route path='/EnterPin' element={<EnterPin />} />
         <Route path='/EnterNewPassword' element={<EnterNewPassword />} />
         <Route path='/Register' element={<Register />} />
-        <Route path='/HelpCenter' element={<HelpCenter />} />
         <Route path='/Pqrsf' element={<Pqrsf />} />
         <Route path='/Dashboard/*' element={
         <PrivateRoute>

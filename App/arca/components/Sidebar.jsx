@@ -31,19 +31,12 @@ function Sidebar(props) {
     { props.onClick() }
   };
 
-  const bodyClassNameMenu = estadoMenu ? "body-dashboard body-dashboard-m" : "body-dashboard";
+  const bodyClassNameMenu = estadoMenu ? "body-dashboard body-dashboard-m hidden" : "body-dashboard";
   const btnMenu = estadoMenu ? "con-sidebar-a con-sidebar-m" : "con-sidebar-a";
-  const body = document.body;
 
   function menu() {
-    if (estadoMenu) {
-      setEstadoMenu(false);
-      body.style.overflowY = "auto";
-    } else {
-      setEstadoMenu(true);
-      body.style.overflowY = "hidden";
-    }
-  }
+    setEstadoMenu(!estadoMenu);
+  };
 
   return (
     <>
