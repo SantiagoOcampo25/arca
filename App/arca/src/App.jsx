@@ -7,11 +7,10 @@ import EnterNewPassword from "../components/EnterNewPassword";
 import Register from "../components/Register";
 import Index from "../components/Index";
 import Pqrsf from "../components/Pqrsf";
-import { ShowDashboardPQRSFContextProvider } from "../components/Context";
+import PrivateRoute from "../components/PrivateRoutes";
 
 function App() { 
   return (  
-    <ShowDashboardPQRSFContextProvider>
       <Routes>
         <Route path='/' element={<Index />} />
         <Route path='/Login' element={<Login />} />
@@ -20,9 +19,12 @@ function App() {
         <Route path='/EnterNewPassword' element={<EnterNewPassword />} />
         <Route path='/Register' element={<Register />} />
         <Route path='/Pqrsf' element={<Pqrsf />} />
-        <Route path='/Dashboard/*' element={<Router />} />
+        <Route path='/Dashboard/*' element={
+        <PrivateRoute>
+          <Router />
+        </PrivateRoute>
+        } />
       </Routes>
-    </ShowDashboardPQRSFContextProvider>
   )
 }
 
